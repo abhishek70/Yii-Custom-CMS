@@ -1,0 +1,6 @@
+2012/04/02 11:38:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in C:\wamp\www\yiiframework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\wamp\www\yiiframework\web\CWebApplication.php(136): CWebApplication->runController('admin')
+#1 C:\wamp\www\yiiframework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/sampleproject/index.php?r=admin
