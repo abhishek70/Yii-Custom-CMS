@@ -4,3 +4,49 @@ Stack trace:
 #1 C:\wamp\www\yiiframework\base\CApplication.php(158): CWebApplication->processRequest()
 #2 C:\wamp\www\sampleproject\index.php(13): CApplication->run()
 #3 {main} REQUEST_URI=/sampleproject/index.php?r=admin
+2012/04/04 12:10:09 [error] [php] Object of class CClientScript could not be converted to string (C:\wamp\www\sampleproject\protected\modules\admin\views\layouts\main.php:7)
+Stack trace:
+#0 C:\wamp\www\yiiframework\web\CController.php(785): DefaultController->renderFile()
+#1 C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php(7): DefaultController->render()
+#2 C:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#3 C:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\yiiframework\web\CController.php(287): DefaultController->runAction()
+#5 C:\wamp\www\yiiframework\web\CController.php(266): DefaultController->runActionWithFilters()
+#6 C:\wamp\www\yiiframework\web\CWebApplication.php(276): DefaultController->run()
+#7 C:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 C:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\sampleproject\index.php(13): CWebApplication->run()
+REQUEST_URI=/sampleproject/index.php?r=admin
+in C:\wamp\www\sampleproject\protected\modules\admin\views\layouts\main.php (7)
+in C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (7)
+in C:\wamp\www\sampleproject\index.php (13)
+2012/04/04 12:32:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\wamp\www\yiiframework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yiiframework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/l...')
+#3 C:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sampleproject/index.php?r=admin/default/login
+---
+2012/04/04 12:35:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\wamp\www\yiiframework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yiiframework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/l...')
+#3 C:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sampleproject/index.php?r=admin/default/login
+---
+2012/04/04 12:35:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\wamp\www\yiiframework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yiiframework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/l...')
+#3 C:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sampleproject/index.php?r=admin/default/login
+---
