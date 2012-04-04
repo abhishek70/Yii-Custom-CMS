@@ -3,8 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
-      
-        <?php Yii::app()->clientScript->registerCssFile( Yii::app()->themeManager->baseUrl . '/css/style.css'); ?>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet'>
+    <?php Yii::app()->clientScript->registerCssFile( Yii::app()->themeManager->baseUrl . '/css/style.css'); ?>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
