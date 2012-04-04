@@ -2,15 +2,16 @@
 
 class AdminModule extends CWebModule
 {
-        public $theme = 'default';
+    public $theme = 'default';
 	public function init()
 	{
 		// this method is called when the module is being created
 		// you may place code here to customize the module or the application
 
 		$this->setLayoutPath('protected/modules/admin/views/layouts');
-                $this->layout = 'main';
-                // import the module-level models and components
+        $this->layout = 'main';
+        
+		// import the module-level models and components
 		$this->setImport(array(
 			'admin.models.*',
 			'admin.components.*',
@@ -53,7 +54,7 @@ class AdminModule extends CWebModule
              
                     Yii::app()->getModule('admin')->user->loginRequired();                
                 }
-		else
+				else
                 {
                     Yii::app()->getModule('admin')->user->setReturnUrl('index');      
                     return true;

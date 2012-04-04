@@ -1,21 +1,29 @@
-<form action="#" method="POST" id="login-form">
-		
-			<fieldset>
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'login-form',
+	'enableClientValidation'=>true,
+	'clientOptions'=>array(
+		'validateOnSubmit'=>true,
+	),
+)); 
+?>
+<fieldset>
+	<p>
+		<?php echo $form->labelEx($model,'username'); ?>
+        <?php echo $form->textField($model,'username',array('class'=>'round full-width-input','autofocus'=>'')); ?>
+		<?php echo $form->error($model,'username'); ?>
+	</p>
+    <p>
+		<?php echo $form->labelEx($model,'password'); ?>
+        <?php echo $form->passwordField($model,'password',array('class'=>'round full-width-input')); ?>
+		<?php echo $form->error($model,'password'); ?>
+	</p>
+    <p>
+        <?php echo $form->checkBox($model,'rememberMe',array('class'=>'remember_me_float')); ?>
+		<?php echo $form->label($model,'rememberMe',array('class'=>'remember_me')); ?>
+		<?php echo $form->error($model,'rememberMe'); ?>
+    </p>
+    <p>I've <a href="#">forgotten my password</a>.</p>
+    <?php echo CHtml::submitButton('LOG IN',array('class'=>'button round blue image-right ic-right-arrow')); ?>
+</fieldset>
 
-				<p>
-					<label for="login-username">username</label>
-					<input type="text" id="login-username" class="round full-width-input" autofocus />
-				</p>
-
-				<p>
-					<label for="login-password">password</label>
-					<input type="password" id="login-password" class="round full-width-input" />
-				</p>
-				
-				<p>I've <a href="#">forgotten my password</a>.</p>
-				
-				<a href="dashboard.html" class="button round blue image-right ic-right-arrow">LOG IN</a>
-
-			</fieldset>
-
-</form>
+<?php $this->endWidget(); ?>

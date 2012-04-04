@@ -337,15 +337,32 @@ form p.form-error em {
 	padding-left: 2em; /* 24/12 */
 }
 
+.errorMessage{ background: transparent url('../images/icons/message-boxes/error.png') no-repeat left center;
+	padding-left: 2em; /* 24/12 */ font-style: italic; color: #cf4425; font-size:12px; }
+
+div.form div.error input, div.form div.error textarea, div.form div.error select, div.form input.error, div.form textarea.error, div.form select.error {
+    background: none repeat scroll 0 0 #FFEEEE;
+    border-color: #CC0000;
+}
+form.css (line 92)
+div.form input, div.form textarea, div.form select {
+    margin: 0.2em 0 0.5em;
+}
+
+span.required {
+    color: red;
+}
+
 form input.error-input { border: 1px solid #ff876f; }
 	form input.error-input:hover { border: 1px solid #b03e27; }
-
+	
 /* Styling the HTML5 placeholders */
 /* So far they don't work in: IE, Opera 10 and below, Firefox 3.6 and below */
 ::-webkit-input-placeholder { color: #858d9c; }
 :-moz-placeholder { color: #858d9c; }
 
-
+.remember_me{ text-transform:none; }
+.remember_me_float { float:left }
 
 
 
