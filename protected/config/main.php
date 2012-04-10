@@ -38,29 +38,34 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
-		/*
+		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				'admin/' => 'admin',
+          		'admin/<_c:([a-zA-z0-9-]+)>' => 'admin/<_c>/admin',
+		  		'admin/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>' => 'admin/<_c>/<_a>',
+		  		'admin/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>//*' => 'admin/<_c>/<_a>/',
 			),
 		),
-		*/
-		'db'=>array(
+		
+		/*'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
+		),*/
 		// uncomment the following to use a MySQL database
-		/*
+		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
+			'connectionString' => 'mysql:host=localhost;dbname=sampleproject',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
+			'tablePrefix' => 'tbl_',
 		),
-		*/
+		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',

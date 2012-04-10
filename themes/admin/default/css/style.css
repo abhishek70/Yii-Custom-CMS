@@ -588,6 +588,11 @@ form#login-form {
 	margin: 0 auto;
 }
 
+form#register-form {
+	width: 18.75em; /* 300/16 */
+	margin: 0 auto;
+}
+
 div.side-menu {
 	background: #3f4551;
 	border: 1px solid #eeefef;

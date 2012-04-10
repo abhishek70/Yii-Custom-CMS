@@ -18,7 +18,7 @@
 		
 		<div class="page-full-width">
 		
-			<a href="#" class="round button dark ic-left-arrow image-left ">Return to website</a>
+			<a href="<?php echo Yii::app()->baseUrl; ?>" target="_blank"  class="round button dark ic-left-arrow image-left ">Return to website</a>
 
 		</div> <!-- end full-width -->	
 	
@@ -69,7 +69,7 @@
 	<!-- FOOTER -->
 	<div id="footer">
 
-		<p>&copy; Copyright 2012 <a href="#">CMS</a>. All rights reserved.</p>
+		<p>&copy; Copyright 2012  CMS. All rights reserved.</p>
 		<p><strong>SimpleAdmin</strong> theme</p>
 	
 	</div> <!-- end footer -->

@@ -1,5 +1,5 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'login-form',
+	'id'=>'register-form',
 	'enableClientValidation'=>true,
 	'clientOptions'=>array(
 		'validateOnSubmit'=>true,
@@ -17,14 +17,11 @@
         <?php echo $form->passwordField($model,'password',array('class'=>'round full-width-input')); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</p>
-    <p>
-        <?php echo $form->checkBox($model,'rememberMe',array('class'=>'remember_me_float')); ?>
-		<?php echo $form->label($model,'rememberMe',array('class'=>'remember_me')); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
-    </p>
+     
     <p>I've <a href="#">forgotten my password</a>.</p>
-    <?php echo CHtml::submitButton('LOG IN',array('class'=>'button round blue image-right ic-right-arrow')); ?>
-    <?php echo CHtml::link('REGISTER',array('default/register'),array('class'=>'button round blue image-right ic-right-arrow')); ?>
+    
+    <?php echo CHtml::submitButton('REGISTER',array('class'=>'button round blue image-right ic-right-arrow')); ?>
+    <?php echo CHtml::link('BACK',array('default/login'),array('class'=>'button round blue image-right ic-right-arrow')); ?>
 </fieldset>
 
 <?php $this->endWidget(); ?>

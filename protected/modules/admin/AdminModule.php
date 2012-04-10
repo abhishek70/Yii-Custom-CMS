@@ -47,6 +47,7 @@ class AdminModule extends CWebModule
                  $publicPages = array(
                     'default/login',
                     'default/error',
+					'default/register',
                  );
                 if (Yii::app()->user->isGuest && !in_array($route, $publicPages))
                 {
