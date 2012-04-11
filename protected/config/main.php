@@ -16,6 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.components.ActiveRecords.*'
 	),
 
 	'modules'=>array(
@@ -63,7 +64,7 @@ return array(
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
-			'tablePrefix' => 'tbl_',
+			//'tablePrefix' => 'tbl_',
 		),
 		
 		'errorHandler'=>array(

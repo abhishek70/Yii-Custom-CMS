@@ -35,9 +35,29 @@ class DefaultController extends Controller {
 	{
 		  $this->layout="main";
 		  $model=new RegisterForm;
+		  $newUser = new User;
+		  
+		if(isset($_POST['RegisterForm']))
+		{
+			$model->attributes=$_POST['RegisterForm'];
+			$newUser->username = $model->username;
+			$newUser->password = $model->password;
+			$newUser->email = $model->email;
+			$newUser->firstname = $model->firstname;
+			$newUser->lastname = $model->lastname;
+			$newUser->isactive='yes';
+			$newUser->createdon=date("Y-m-d H:i:s");
+			
+			if($model->validate())
+			{
+				$newUser->save();
+				Yii::app()->user->setFlash('register','Thank you for contacting us. We will respond to you as soon as possible.');
+				$this->refresh();
+			}
+		}
 		 
-		  // display the register form
-		  $this->render('register',array('model'=>$model));		
+		// display the register form
+		$this->render('register',array('model'=>$model));		
 	
 	}
 	
