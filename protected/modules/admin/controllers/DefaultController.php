@@ -2,8 +2,12 @@
 
 class DefaultController extends Controller {
 
+	public $pageHeading1;
+	public $pageHeading2;
+	
 	public function actionIndex()
 	{
+		//$this->layout="main";	
 		$this->render('index');
 	}
         
@@ -25,7 +29,8 @@ class DefaultController extends Controller {
 			 $model->attributes=$_POST['LoginForm'];
 			 // validate user input and redirect to the previous page if valid
 			 if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
+				$this->redirect(Yii::app()->getModule('admin')->user->returnUrl);
+				//$this->redirect(Yii::app()->user->returnUrl);
 		  }
 		  // display the login form
 		  $this->render('login',array('model'=>$model));
@@ -40,18 +45,16 @@ class DefaultController extends Controller {
 		if(isset($_POST['RegisterForm']))
 		{
 			$model->attributes=$_POST['RegisterForm'];
-			$newUser->username = $model->username;
-			$newUser->password = $model->password;
-			$newUser->email = $model->email;
-			$newUser->firstname = $model->firstname;
-			$newUser->lastname = $model->lastname;
+			$newUser->attributes = $model->attributes;
+			$newUser->password=md5($model->password);
 			$newUser->isactive='yes';
-			$newUser->createdon=date("Y-m-d H:i:s");
+			$newUser->createdon=new CDbExpression('NOW()');
 			
 			if($model->validate())
 			{
 				$newUser->save();
-				Yii::app()->user->setFlash('register','Thank you for contacting us. We will respond to you as soon as possible.');
+				$message = 'Registration Completed Successfully. Login To CMS '.CHtml::link('Click Here', array('default/login'));
+				Yii::app()->user->setFlash('register',$message);
 				$this->refresh();
 			}
 		}

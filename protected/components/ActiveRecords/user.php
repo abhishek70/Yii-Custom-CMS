@@ -2,9 +2,20 @@
 
 class user extends CActiveRecord
 {
+	
+	public $firstname;
+	public $lastname;
+	public $username;
+	public $password;
+	public $confirmpassword;
+	public $email;
+	public $isactive;
+	public $createdon;
+	
 	public function rules()
 	{
 		return array(
+			array('username, password, confirmpassword, firstname, lastname, email', 'safe'),
 		);
 	}
 

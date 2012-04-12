@@ -1,10 +1,16 @@
-<?php if(Yii::app()->user->hasFlash('register')) ?>
+<?php $this->pageTitle=Yii::app()->name . ' - Registration'; ?>
+<?php $this->pageHeading1='Registration'; ?>
+<?php $this->pageHeading2='Enter your credentials below'; ?>
 
-<div class="flash-success">
+<?php if(Yii::app()->user->hasFlash('register')) : ?>
+
+<div class="flash-success" align="center">
+<div class="confirmation-box round" style="width:600px; text-align:left">
 	<?php echo Yii::app()->user->getFlash('register'); ?>
 </div>
+</div>
 
-<?php //else: ?>
+<?php endif; ?>
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'register-form',
@@ -17,7 +23,7 @@
 <fieldset>
 	<p>
 		<?php echo $form->labelEx($model,'username'); ?>
-        <?php echo $form->textField($model,'username',array('class'=>'round full-width-input','autofocus'=>'')); ?>
+        <?php echo $form->textField($model,'username',array('class'=>'round full-width-input')); ?>
 		<?php echo $form->error($model,'username'); ?>
 	</p>
     <p>
@@ -32,17 +38,17 @@
 	</p>
     <p>
 		<?php echo $form->labelEx($model,'firstname'); ?>
-        <?php echo $form->textField($model,'firstname',array('class'=>'round full-width-input','autofocus'=>'')); ?>
+        <?php echo $form->textField($model,'firstname',array('class'=>'round full-width-input')); ?>
 		<?php echo $form->error($model,'firstname'); ?>
 	</p>
     <p>
 		<?php echo $form->labelEx($model,'lastname'); ?>
-        <?php echo $form->textField($model,'lastname',array('class'=>'round full-width-input','autofocus'=>'')); ?>
+        <?php echo $form->textField($model,'lastname',array('class'=>'round full-width-input')); ?>
 		<?php echo $form->error($model,'lastname'); ?>
 	</p>
     <p>
 		<?php echo $form->labelEx($model,'email'); ?>
-        <?php echo $form->textField($model,'email',array('class'=>'round full-width-input','autofocus'=>'')); ?>
+        <?php echo $form->textField($model,'email',array('class'=>'round full-width-input')); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</p>
     
@@ -51,4 +57,3 @@
 </fieldset>
 
 <?php $this->endWidget(); ?>
-<?php //endif; ?>
