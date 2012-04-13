@@ -7,38 +7,59 @@ class DefaultController extends Controller {
 	
 	public function actionIndex()
 	{
-		//$this->layout="main";	
-		$this->render('index');
+		//$this->layout="main";
+		if (Yii::app()->user->isGuest)
+		{
+			//$this->render('index');
+			$this->redirect(Yii::app()->createUrl('default/login'));
+		}
+		else
+		{
+			$this->render('index');
+		}
 	}
         
     public function actionLogin()
 	{
 	   	  $this->layout="main";	
-          $model=new LoginForm;
-
-		  // if it is ajax validation request
-		  if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
-		  {
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		  }
-
-		  // collect user input data
-		  if(isset($_POST['LoginForm']))
-		  {
-			 $model->attributes=$_POST['LoginForm'];
-			 // validate user input and redirect to the previous page if valid
-			 if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->getModule('admin')->user->returnUrl);
-				//$this->redirect(Yii::app()->user->returnUrl);
-		  }
-		  // display the login form
-		  $this->render('login',array('model'=>$model));
+          
+		  // redirec to dashboard page is user is registered
+	      if (!Yii::app()->user->isGuest)
+	      {
+	            $this->redirect(Yii::app()->getModule('admin')->user->returnUrl);
+	      }
+	      else
+	      {
+		  
+			  $model=new LoginForm;
+	
+			  // if it is ajax validation request
+			  if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
+			  {
+				echo CActiveForm::validate($model);
+				Yii::app()->end();
+			  }
+	
+			  // collect user input data
+			  if(isset($_POST['LoginForm']))
+			  {
+				 $model->attributes=$_POST['LoginForm'];
+				 // validate user input and redirect to the previous page if valid
+				 if($model->validate() && $model->login())
+					$this->redirect(Yii::app()->getModule('admin')->user->returnUrl);
+					//$this->redirect(Yii::app()->user->returnUrl);
+			  }
+			  // display the login form
+			  $this->render('login',array('model'=>$model));
+		   }
 	}
 	
 	public function actionRegister() 
 	{
-		  $this->layout="main";
+	  $this->layout="main";
+	  if (Yii::app()->user->isGuest)
+	  {
+
 		  $model=new RegisterForm;
 		  $newUser = new User;
 		  
@@ -60,7 +81,12 @@ class DefaultController extends Controller {
 		}
 		 
 		// display the register form
-		$this->render('register',array('model'=>$model));		
+		$this->render('register',array('model'=>$model));
+	  }	
+	  else
+	  {
+	  	$this->redirect(Yii::app()->getModule('admin')->user->returnUrl);
+	  }	
 	
 	}
 	

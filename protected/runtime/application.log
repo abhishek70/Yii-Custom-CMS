@@ -1,0 +1,163 @@
+2012/04/13 17:19:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page-full-width.html".' in D:\wamp\www\yiiframework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CController.php(271): CController->missingAction('page-full-width...')
+#1 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('page-full-width...')
+#2 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/p...')
+#3 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sampleproject/admin/default/page-full-width.html
+HTTP_REFERER=http://localhost/sampleproject/admin/default/index
+---
+2012/04/13 17:19:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page-full-width.html".' in D:\wamp\www\yiiframework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CController.php(271): CController->missingAction('page-full-width...')
+#1 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('page-full-width...')
+#2 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/p...')
+#3 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sampleproject/admin/default/page-full-width.html
+HTTP_REFERER=http://localhost/sampleproject/admin/default/index
+---
+2012/04/13 17:20:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page-full-width.html".' in D:\wamp\www\yiiframework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CController.php(271): CController->missingAction('page-full-width...')
+#1 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('page-full-width...')
+#2 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/p...')
+#3 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sampleproject/admin/default/page-full-width.html
+HTTP_REFERER=http://localhost/sampleproject/admin/default/index
+---
+2012/04/13 17:20:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test".' in D:\wamp\www\yiiframework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CController.php(271): CController->missingAction('test')
+#1 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('test')
+#2 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#3 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sampleproject/site/test
+---
+2012/04/13 17:20:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page-full-width.html".' in D:\wamp\www\yiiframework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CController.php(271): CController->missingAction('page-full-width...')
+#1 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('page-full-width...')
+#2 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/p...')
+#3 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sampleproject/admin/default/page-full-width.html
+HTTP_REFERER=http://localhost/sampleproject/admin/default/index
+---
+2012/04/13 17:54:17 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "dashboard".' in D:\wamp\www\yiiframework\web\CController.php:879
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CController.php(783): CController->renderPartial('dashboard', NULL, true)
+#1 D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php(21): CController->render('dashboard')
+#2 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#3 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('login')
+#7 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/l...')
+#8 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sampleproject/admin/default/login
+---
+2012/04/13 17:59:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "indec".' in D:\wamp\www\yiiframework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CController.php(271): CController->missingAction('indec')
+#1 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('indec')
+#2 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/i...')
+#3 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sampleproject/admin/default/indec
+---
+2012/04/13 17:59:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "indecx".' in D:\wamp\www\yiiframework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CController.php(271): CController->missingAction('indecx')
+#1 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('indecx')
+#2 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/i...')
+#3 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sampleproject/admin/default/indecx
+---
+2012/04/13 18:02:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/index".' in D:\wamp\www\yiiframework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('default/index')
+#1 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sampleproject/default/index
+---
+2012/04/13 18:02:32 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "createUrl".' in D:\wamp\www\yiiframework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('createUrl', Array)
+#1 D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php(88): AdminModule->createUrl('default/index')
+#2 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): DefaultController->actionRegister()
+#3 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('register')
+#7 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/r...')
+#8 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sampleproject/admin/default/register
+---
+2012/04/13 18:03:03 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "createUrl".' in D:\wamp\www\yiiframework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('createUrl', Array)
+#1 D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php(88): CWebUser->createUrl('default/index')
+#2 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): DefaultController->actionRegister()
+#3 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('register')
+#7 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/r...')
+#8 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/sampleproject/admin/default/register
+---
+2012/04/13 18:17:19 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "redirect".' in D:\wamp\www\yiiframework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('redirect', Array)
+#1 D:\wamp\www\sampleproject\protected\modules\admin\AdminModule.php(62): AdminModule->redirect('index')
+#2 D:\wamp\www\yiiframework\web\CController.php(264): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#3 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#4 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin')
+#5 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/sampleproject/admin/
+---
+2012/04/13 18:17:48 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "redirect".' in D:\wamp\www\yiiframework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('redirect', Array)
+#1 D:\wamp\www\sampleproject\protected\modules\admin\AdminModule.php(62): AdminModule->redirect('/sampleproject/...')
+#2 D:\wamp\www\yiiframework\web\CController.php(264): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#3 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#4 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin')
+#5 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/sampleproject/admin/
+---
+2012/04/13 18:22:44 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "redirect".' in D:\wamp\www\yiiframework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('redirect', Array)
+#1 D:\wamp\www\sampleproject\protected\modules\admin\AdminModule.php(62): AdminModule->redirect(Array)
+#2 D:\wamp\www\yiiframework\web\CController.php(264): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#3 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#4 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin')
+#5 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/sampleproject/admin/
+---

@@ -58,7 +58,7 @@ class AdminModule extends CWebModule
                 }
 				else
                 {
-                    Yii::app()->getModule('admin')->user->setReturnUrl('index');   
+                    Yii::app()->getModule('admin')->user->setReturnUrl('index');  
                     return true;
                 }
             }
