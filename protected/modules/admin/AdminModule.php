@@ -10,7 +10,7 @@ class AdminModule extends CWebModule
 
 		$this->setLayoutPath('protected/modules/admin/views/layouts');
         $this->layout = 'main';
-        
+        Yii::app()->name = Yii::app()->name.' - Admin Panel';
 		// import the module-level models and components
 		$this->setImport(array(
 			'admin.models.*',
@@ -37,10 +37,10 @@ class AdminModule extends CWebModule
 
 	public function beforeControllerAction($controller, $action)
 	{
-            if(parent::beforeControllerAction($controller, $action))
+			if(parent::beforeControllerAction($controller, $action))
             {
 				
-                $controller->layout="column2";
+                $controller->layout="main";
                 // this method is called before any module controller action is performed
                 // you may place customized code here
                  $route = $controller->id . '/' . $action->id;
@@ -58,7 +58,7 @@ class AdminModule extends CWebModule
                 }
 				else
                 {
-                    Yii::app()->getModule('admin')->user->setReturnUrl('index');      
+                    Yii::app()->getModule('admin')->user->setReturnUrl('index');   
                     return true;
                 }
             }

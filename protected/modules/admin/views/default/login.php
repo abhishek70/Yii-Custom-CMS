@@ -1,3 +1,7 @@
+<?php $this->pageTitle=Yii::app()->name . ' - Login'; ?>
+<?php $this->pageHeading1='Login to CMS'; ?>
+<?php $this->pageHeading2='Enter your credentials below'; ?>
+
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,

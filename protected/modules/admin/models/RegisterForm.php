@@ -26,13 +26,13 @@ class RegisterForm extends CFormModel
 		return array(
 			array('username, password, confirmpassword, firstname, lastname, email', 'required'),
 			array('username, password, confirmpassword, firstname, lastname, email', 'safe'),
-			array('username', 'match', 'pattern'=>'/^\S+$/', 'message'=>'Invalid username'),
+			array('username', 'match', 'pattern'=>'/^[A-Z\ \.a-z0-9_-]+$/u', 'message'=>'Incorrect symbols. Allowed Characters: A-z 0-9 . - _")'),
 			array('username', 'availableUsername'),
 			array('email', 'availableuseremail'),
 			array('password', 'length', 'min'=>8, 'max'=>255),
 			array('password', 'match', 'pattern'=>'/^(?=.*[a-zA-Z0-9]).{8,}$/', 'message'=>'Your password is too weak, needs to be at least 8 characters'),
 			array('confirmpassword', 'compare', 'compareAttribute'=>'password', 'message'=>'Passwords do not match'),
-			array('email', 'email')
+			array('email', 'email','checkMX' => true)
 		);
 	}
 	
@@ -55,7 +55,7 @@ class RegisterForm extends CFormModel
 			      ))
 				)
 		{
-			$this->addError('username','Username unavailable');
+			$this->addError('username','This username is already in use.Please enter another one.');
 		}
 	}
 	
