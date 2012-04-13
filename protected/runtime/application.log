@@ -417,3 +417,24 @@ Stack trace:
 REQUEST_URI=/sampleproject/index.php/admin/default/register
 in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (38)
 in D:\wamp\www\sampleproject\index.php (13)
+2012/04/12 04:35:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sampleproject.user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `user`.
+in C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (38)
+in C:\wamp\www\sampleproject\index.php (13)
+2012/04/12 04:35:12 [error] [exception.CDbException] exception 'CDbException' with message 'The table "user" for active record class "user" cannot be found in the database.' in C:\wamp\www\yiiframework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 C:\wamp\www\yiiframework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(user))
+#1 C:\wamp\www\yiiframework\db\ar\CActiveRecord.php(394): CActiveRecord::model('user')
+#2 C:\wamp\www\yiiframework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php(38): CActiveRecord->__construct()
+#4 C:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): DefaultController->actionRegister()
+#5 C:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('register')
+#9 C:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/r...')
+#10 C:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sampleproject/admin/default/register
+HTTP_REFERER=http://localhost/sampleproject/admin/default/login
+---

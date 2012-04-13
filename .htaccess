@@ -1,5 +1,5 @@
 Options +FollowSymLinks
-Options All -Indexes
+#Options All -Indexes
 IndexIgnore */*
 RewriteEngine on
 

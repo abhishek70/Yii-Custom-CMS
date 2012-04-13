@@ -47,10 +47,11 @@ return array(
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'admin/' => 'admin',
-          		'admin/<_c:([a-zA-z0-9-]+)>' => 'admin/<_c>/admin',
+                                'admin/<_c:([a-zA-z0-9-]+)>' => 'admin/<_c>/admin',
 		  		'admin/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>' => 'admin/<_c>/<_a>',
 		  		'admin/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>//*' => 'admin/<_c>/<_a>/',
 			),
+                        'showScriptName'=>false
 		),
 		
 		/*'db'=>array(
