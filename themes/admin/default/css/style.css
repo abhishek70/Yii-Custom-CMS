@@ -625,6 +625,8 @@ div.content-module {
 	background: white;
 	margin-bottom: 1em; /* 16/16 */
 	border: 1px solid #eeefef;
+	float:left;
+	width:100%
 }
 
 div.content-module-heading {

@@ -72,8 +72,8 @@
 			<?php else: ?>
             <ul id="tabs" class="fl">
 				<li><a href="dashboard.html" class="active-tab dashboard-tab">Dashboard</a></li>
-				<li><a href="page-full-width.html">Full width page</a></li>
-				<li><a href="page-other.html">Other page elements</a></li>
+				<!--<li><a href="page-full-width.html">Full width page</a></li>
+				<li><a href="page-other.html">Other page elements</a></li>-->
 			</ul>
             <?php endif; ?>
 			<!-- Change this image to your own company's logo -->
@@ -104,7 +104,22 @@
 	<?php //endif?>
                 
         <div id="content">
-	<?php echo $content; ?>
+			<div class="page-full-width cf">
+            <?php if(Yii::app()->user->id != '') : ?>
+            <div class="side-menu fl">
+				
+				<h3>Side Menu</h3>
+				<ul>
+					<li><a href="#">Side menu link</a></li>
+					<li><a href="#">Another link</a></li>
+					<li><a href="#">A third link</a></li>
+					<li><a href="#">Fourth link</a></li>
+				</ul>
+				
+			</div> <!-- end side-menu -->
+            <?php endif; ?>
+			<?php echo $content; ?>
+            </div>
         </div>
 	<div class="clear"></div>
 
