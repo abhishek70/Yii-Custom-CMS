@@ -28,7 +28,8 @@ return array(
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		'admin',
+		'admin'=>array( 'import' => array('admin.components.*'),
+                                                'layout' => 'main'),
 		
 	),
 
@@ -43,15 +44,15 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
+				'admin/' => 'admin',
+                'admin/<_c:([a-zA-z0-9-]+)>' => 'admin/<_c>/admin',
+		  		'admin/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>' => 'admin/<_c>/<_a>',
+		  		'admin/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>//*' => 'admin/<_c>/<_a>/',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-				'admin/' => 'admin',
-                                'admin/<_c:([a-zA-z0-9-]+)>' => 'admin/<_c>/admin',
-		  		'admin/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>' => 'admin/<_c>/<_a>',
-		  		'admin/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>//*' => 'admin/<_c>/<_a>/',
 			),
-                        'showScriptName'=>false
+                'showScriptName'=>false
 		),
 		
 		/*'db'=>array(

@@ -13,28 +13,8 @@ in the "<?php //echo $this->module->id; ?>" module.
 <p>
 You may customize this page by editing <tt><?php //echo __FILE__; ?></tt>
 </p>-->
-<style type="text/css">
-.dashIcon {
-    background-color: #F9F9F9;
-    border: 1px solid #CCCCCC;
-    float: left;
-    margin-bottom: 10px;
-    padding-top: 8px;
-    text-align: center;
-}
-.span-3 {
-    width: 110px;
-}
-.dashIconText {
-    padding-bottom: 10px;
-    padding-top: 5px;
-	 font-size:12px;
-}
 
-</style>
 <?php $this->pageTitle=Yii::app()->name . ' - Dashboard'; ?>
-			
-			<div class="side-content fr">
 			
 				<div class="content-module">
 				
@@ -48,14 +28,11 @@ You may customize this page by editing <tt><?php //echo __FILE__; ?></tt>
 					
 					
 					<div class="content-module-main">
-					&nbsp;
 						<div class="dashIcon span-3">
         					<a href="#"><img alt="Customers" src="<?php echo Yii::app()->themeManager->baseUrl; ?>/images/icon-people.png"></a>
         				<div class="dashIconText"><a href="#">Users</a></div>
-    					</div>
-					
+    				    </div>
+			
 					</div> <!-- end content-module-main -->
 				
 				</div> <!-- end content-module -->
-		
-			</div> <!-- end side-content -->

@@ -658,3 +658,20 @@ div#footer {
 	text-align: center;
 	padding: 1.875em 0; /* 30/16 */
 }
+
+.dashIcon {
+    background-color: #F9F9F9;
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    text-align: center;
+}
+.span-3 {
+    width: 110px;
+}
+.dashIconText {
+    padding-bottom: 10px;
+    padding-top: 5px;
+	 font-size:12px;
+}

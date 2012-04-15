@@ -44,7 +44,6 @@ class AdminModule extends CWebModule
                 // this method is called before any module controller action is performed
                 // you may place customized code here
                  $route = $controller->id . '/' . $action->id;
-           
                  $publicPages = array(
                     'default/login',
                     'default/error',

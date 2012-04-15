@@ -181,3 +181,552 @@ Stack trace:
 REQUEST_URI=/sampleproject/admin/logout
 HTTP_REFERER=http://localhost/sampleproject/admin/
 ---
+2012/04/14 14:56:13 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.admin.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:00:35 [error] [exception.CException] exception 'CException' with message 'Alias "application.admin.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.adm...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:04:10 [error] [exception.CException] exception 'CException' with message 'Alias "application..admin.models.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application..ad...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:28:16 [error] [exception.CException] exception 'CException' with message 'Alias "application.admin.models.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.adm...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:28:40 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.admin.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:35:59 [error] [exception.CException] exception 'CException' with message 'Alias "application.admin.models.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.adm...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:37:15 [error] [exception.CException] exception 'CException' with message 'Alias "application.models.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:38:49 [error] [exception.CException] exception 'CException' with message 'Alias "application.admin.models.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.adm...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:39:06 [error] [exception.CException] exception 'CException' with message 'Alias "application.models.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:40:14 [error] [exception.CException] exception 'CException' with message 'Alias "admin.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('admin.User', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:53:08 [error] [exception.CException] exception 'CException' with message 'Alias "modules.admin.User" is invalid. Make sure it points to an existing directory or file.' in D:\wamp\www\yiiframework\YiiBase.php:343
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('modules.admin.U...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:54:01 [error] [exception.CException] exception 'CException' with message 'Alias "application.admin.models" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.adm...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:58:15 [error] [exception.CException] exception 'CException' with message 'Alias "application.admin.models.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.adm...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 15:59:22 [error] [exception.CException] exception 'CException' with message 'Alias "application.models.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 16:53:50 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.admin.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 16:55:40 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.admin.models.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 16:55:58 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.admin.models.User" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/14 17:03:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\wamp\www\yiiframework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\wamp\www\yiiframework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\wamp\www\yiiframework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/user/admi...')
+#9 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sampleproject/admin/user/admin
+---
+2012/04/14 17:16:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/dashboard.html".' in D:\wamp\www\yiiframework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/dashboard...')
+#1 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sampleproject/admin/dashboard.html
+HTTP_REFERER=http://localhost/sampleproject/admin/user
+---
+2012/04/14 20:17:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/default/css/gridViewStyle/gridView.css".' in D:\wamp\www\yiiframework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('themes/admin/de...')
+#1 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sampleproject/themes/admin/default/css/gridViewStyle/gridView.css
+HTTP_REFERER=http://localhost/sampleproject/admin/user
+---
+2012/04/14 20:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/default/css/gridViewStyle/gridView.css".' in D:\wamp\www\yiiframework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('themes/admin/de...')
+#1 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sampleproject/themes/admin/default/css/gridViewStyle/gridView.css
+HTTP_REFERER=http://localhost/sampleproject/admin/user
+---
+2012/04/14 20:28:00 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/14 20:29:49 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/14 20:30:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/logout/admin".' in D:\wamp\www\yiiframework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/logout/ad...')
+#1 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sampleproject/admin/logout
+HTTP_REFERER=http://localhost/sampleproject/admin/user
+---
+2012/04/14 20:30:43 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/14 20:32:59 [warning] [application] Failed to set unsafe attribute "isactive" of "user".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/14 20:32:59 [warning] [application] Failed to set unsafe attribute "createdon" of "user".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/14 20:33:33 [error] [exception.CException] exception 'CException' with message 'user and its behaviors do not have a method or closure named "search".' in D:\wamp\www\yiiframework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\yiiframework\db\ar\CActiveRecord.php(226): CComponent->__call('search', Array)
+#1 [internal function]: CActiveRecord->__call('search', Array)
+#2 D:\wamp\www\sampleproject\protected\modules\admin\views\user\admin.php(50): user->search()
+#3 D:\wamp\www\yiiframework\web\CBaseController.php(127): require('D:\wamp\www\sam...')
+#4 D:\wamp\www\yiiframework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sam...', Array, true)
+#5 D:\wamp\www\yiiframework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sam...', Array, true)
+#6 D:\wamp\www\yiiframework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#7 D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php(148): CController->render('admin', Array)
+#8 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): UserController->actionAdmin()
+#9 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\yiiframework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 D:\wamp\www\yiiframework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#16 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('admin')
+#18 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/user/admi...')
+#19 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/sampleproject/admin/user
+---
+2012/04/15 06:01:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/default/css/gridViewStyle/images/gr-view.png".' in D:\wamp\www\yiiframework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('themes/admin/de...')
+#1 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sampleproject/themes/admin/default/css/gridViewStyle/images/gr-view.png
+HTTP_REFERER=http://localhost/sampleproject/admin/user
+---
+2012/04/15 06:01:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/default/css/gridViewStyle/images/gr-view.png".' in D:\wamp\www\yiiframework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('themes/admin/de...')
+#1 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sampleproject/themes/admin/default/css/gridViewStyle/images/gr-view.png
+HTTP_REFERER=http://localhost/sampleproject/admin/user
+---
+2012/04/15 07:15:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/logout/admin".' in D:\wamp\www\yiiframework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/logout/ad...')
+#1 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sampleproject/admin/logout
+HTTP_REFERER=http://localhost/sampleproject/admin/user
+---
+2012/04/15 07:32:49 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.admin.models.Page" is invalid. Make sure it points to an existing PHP file.' in D:\wamp\www\yiiframework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yiiframework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(158): CModel->validate()
+#5 D:\wamp\www\yiiframework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('')
+#11 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sampleproject/gii/crud
+HTTP_REFERER=http://localhost/sampleproject/gii/crud
+---
+2012/04/15 07:34:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\wamp\www\yiiframework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\wamp\www\yiiframework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\wamp\www\yiiframework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/page/admi...')
+#9 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sampleproject/admin/page
+---
+2012/04/15 07:37:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/page/admin".' in D:\wamp\www\yiiframework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/page/admi...')
+#1 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sampleproject/admin/page
+---
+2012/04/15 07:41:05 [warning] [application] Failed to set unsafe attribute "isactive" of "user".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/15 07:41:05 [warning] [application] Failed to set unsafe attribute "createdon" of "user".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/15 07:41:27 [warning] [application] Failed to set unsafe attribute "isactive" of "user".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/15 07:41:27 [warning] [application] Failed to set unsafe attribute "createdon" of "user".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/15 07:46:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/logout/admin".' in D:\wamp\www\yiiframework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/logout/ad...')
+#1 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sampleproject/admin/logout
+HTTP_REFERER=http://localhost/sampleproject/admin/user
+---
+2012/04/15 07:49:05 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/15 07:49:05 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/15 16:32:25 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (95)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/15 16:32:25 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (95)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/15 16:32:25 [warning] [application] Failed to set unsafe attribute "updatedon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (95)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/15 16:32:45 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (71)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/15 16:32:45 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (71)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/15 16:32:45 [warning] [application] Failed to set unsafe attribute "updatedon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (71)
+in D:\wamp\www\sampleproject\index.php (13)
