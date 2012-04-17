@@ -1,5 +1,4 @@
 <?php
-
 class AdminModule extends CWebModule
 {
     public $theme = 'default';

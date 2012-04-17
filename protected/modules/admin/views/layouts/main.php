@@ -22,18 +22,19 @@
 
 			<ul id="nav" class="fl">
 	
-				<li class="v-sep"><a href="#" class="round button dark ic-left-arrow image-left">Go to website</a></li>
+				<li class="v-sep"><a href="<?php echo Yii::app()->baseUrl; ?>" class="round button dark ic-left-arrow image-left">Go to website</a></li>
 				<li class="v-sep"><a href="#" class="round button dark menu-user image-left">Logged in as <strong>admin</strong></a>
 					<ul>
 						<li><a href="#">My Profile</a></li>
 						<li><a href="#">User Settings</a></li>
 						<li><a href="#">Change Password</a></li>
-						<li><a href="logout">Log out</a></li>
+						<li><?php echo CHtml::link(Yii::t("adminglobal", "Log out"),Yii::app()->User->createUrl('default/logout')); ?>
+                        <!--<a href="<?php //echo Yii::app()->createUrl('/default/logout'); ?>">Log out</a>--></li>
 					</ul> 
 				</li>
 			
 				<li><a href="#" class="round button dark menu-email-special image-left">3 new messages</a></li>
-				<li><a href="logout" class="round button dark menu-logoff image-left">Log out</a></li>
+				<li><a href="<?php echo Yii::app()->createUrl('/default/logout'); ?>" class="round button dark menu-logoff image-left">Log out</a></li>
 				
 			</ul> <!-- end nav -->
 
