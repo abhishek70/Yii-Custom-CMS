@@ -28,21 +28,23 @@
 						<li><a href="#">My Profile</a></li>
 						<li><a href="#">User Settings</a></li>
 						<li><a href="#">Change Password</a></li>
-						<li><a href="<?php echo Yii::app()->createUrl('/default/logout'); ?>">Log out</a></li>
+						<li><a href="<?php //echo Yii::app()->createUrl('/default/logout'); ?>">Log out</a></li>
 					</ul> -->
-         <?php $this->widget('zii.widgets.CMenu',array(
+         <?php 
+		 $this->widget('zii.widgets.CMenu',array(
 				'items'=>array(
 				array('label'=>Yii::t('adminglobal','My Profile'), 'url'=>array('')),
 				array('label'=>Yii::t('adminglobal','User Settings'), 'url'=>array('')),
 				array('label'=>Yii::t('adminglobal','Change Password'), 'url'=>array('')),
-				array('label'=>Yii::t('adminglobal','Log out'), 'url'=>array('/default/login')),
+				array('label'=>Yii::t('adminglobal','Log out'), 'url'=>array('default/logout')),
 			),
 		)); 
 		?>
 				</li>
 			
 				<li><a href="#" class="round button dark menu-email-special image-left">3 new messages</a></li>
-				<li><a href="<?php echo Yii::app()->createUrl('/default/logout'); ?>" class="round button dark menu-logoff image-left">Log out</a></li>
+				<li><?php //echo CHtml::link(Yii::t('adminglobal', 'Log out'), array('default/logout'), array( 'class' => 'round button dark menu-logoff image-left' )); ?>
+				<a href="<?php echo $this->createUrl('default/logout'); ?>" class="round button dark menu-logoff image-left">Log out</a></li>
 				
 			</ul> <!-- end nav -->
 
