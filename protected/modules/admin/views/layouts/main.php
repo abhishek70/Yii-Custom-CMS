@@ -24,18 +24,12 @@
 	
 				<li class="v-sep"><a href="<?php echo Yii::app()->baseUrl; ?>" class="round button dark ic-left-arrow image-left">Go to website</a></li>
 				<li class="v-sep"><a href="#" class="round button dark menu-user image-left">Logged in as <strong>admin</strong></a>
-					<!--<ul>
-						<li><a href="#">My Profile</a></li>
-						<li><a href="#">User Settings</a></li>
-						<li><a href="#">Change Password</a></li>
-						<li><a href="<?php //echo Yii::app()->createUrl('/default/logout'); ?>">Log out</a></li>
-					</ul> -->
          <?php 
 		 $this->widget('zii.widgets.CMenu',array(
 				'items'=>array(
-				array('label'=>Yii::t('adminglobal','My Profile'), 'url'=>array('')),
+				array('label'=>Yii::t('adminglobal','My Profile'), 'url'=>array('user/view','id'=>Yii::app()->user->id)),
 				array('label'=>Yii::t('adminglobal','User Settings'), 'url'=>array('')),
-				array('label'=>Yii::t('adminglobal','Change Password'), 'url'=>array('')),
+				array('label'=>Yii::t('adminglobal','Change Password'), 'url'=>array('user/update','id'=>Yii::app()->user->id)),
 				array('label'=>Yii::t('adminglobal','Log out'), 'url'=>array('default/logout')),
 			),
 		)); 
