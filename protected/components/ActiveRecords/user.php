@@ -28,9 +28,17 @@ class User extends CActiveRecord
 	public function rules()
 	{
 		return array(
-			array('username, password, email, firstname, lastname', 'required'),
+			array('username, password, confirmpassword, email, firstname, lastname', 'required'),
 			array('username, password, email, firstname, lastname', 'length', 'max'=>255),
 			array('username, password, confirmpassword, firstname, lastname, email', 'safe'),
+			array('username', 'match', 'pattern'=>'/^[A-Z\ \.a-z0-9_-]+$/u', 'message'=>'Incorrect symbols. Allowed Characters: A-z 0-9 . - _")'),
+			array('username', 'availableUsername'),
+			array('email', 'availableuseremail'),
+			array('password', 'length', 'min'=>8, 'max'=>255),
+			array('password', 'match', 'pattern'=>'/^(?=.*[a-zA-Z0-9]).{8,}$/', 'message'=>'Your password is too weak, needs to be at least 8 characters'),
+			//array('confirmpassword', 'compare', 'compareAttribute'=>'password', 'message'=>'Passwords do not match'),
+			array('email', 'email','checkMX' => true),
+			
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, username, email, firstname, lastname, isactive,', 'safe', 'on'=>'search'),
@@ -43,6 +51,7 @@ class User extends CActiveRecord
 			'id' => 'ID',
 			'username' => 'Username',
 			'password' => 'Password',
+			'confirmpassword'=>'Confirm Password',
 			'email' => 'Email',
 			'firstname' => 'Firstname',
 			'lastname' => 'Lastname',
@@ -50,6 +59,32 @@ class User extends CActiveRecord
 			'createdon' => 'Createdon',
 			'updatedon' => 'Updatedon',
 		);
+	}
+	
+	public function availableUsername($attribute,$params)
+	{
+		if (User::model()->exists(
+			array(
+			      'condition'=>'username=:username',
+			      'params'=>array(':username'=>$this->username),
+			      ))
+				)
+		{
+			$this->addError('username','This username is already in use.Please enter another one.');
+		}
+	}
+	
+	public function availableuseremail($attribute,$params)
+	{
+		if (User::model()->exists(
+			array(
+			      'condition'=>'email=:email',
+			      'params'=>array(':email'=>$this->email),
+			      ))
+				)
+		{
+			$this->addError('email','This email id is already used.Please enter another one.');
+		}
 	}
 
 	public static function model($className=__CLASS__)

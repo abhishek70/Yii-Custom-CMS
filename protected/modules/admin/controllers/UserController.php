@@ -62,9 +62,10 @@ class UserController extends Controller
 	public function actionCreate()
 	{
 		$model=new User;
-
+        $model->isactive='yes';
+		
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['User']))
 		{

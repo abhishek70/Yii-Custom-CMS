@@ -2,7 +2,7 @@
 
 class UserIdentity extends CUserIdentity
 {
-	private $userid;
+	private $_id;
 
 	public function authenticate()
 	{		
@@ -17,8 +17,8 @@ class UserIdentity extends CUserIdentity
 		else
 		{
            		   
-		   $this->userid=$record->id;
-		   $this->setState('userid', $record->id);
+		   $this->_id=$record->id;
+		   $this->setState('adminfullname', $record->firstname.' '.$record->lastname);
 		   $this->errorCode=self::ERROR_NONE;		   
 		}
 
@@ -27,6 +27,6 @@ class UserIdentity extends CUserIdentity
 	
 	public function getId()
 	{
-	    return $this->userid;
+	    return $this->_id;
 	}
 }

@@ -344,6 +344,10 @@ div.form div.error input, div.form div.error textarea, div.form div.error select
     background: none repeat scroll 0 0 #FFEEEE;
     border-color: #CC0000;
 }
+p.form p.error input, p.form p.error textarea, p.form p.error select, p.form input.error, p.form textarea.error, p.form select.error {
+    background: none repeat scroll 0 0 #FFEEEE;
+    border-color: #CC0000;
+}
 form.css (line 92)
 div.form input, div.form textarea, div.form select {
     margin: 0.2em 0 0.5em;
@@ -615,10 +619,12 @@ div.side-menu {
 			display: block;
 			background: white url('../images/menu-dark-indicator.png') no-repeat right center;
 		}
-			div.side-menu ul li a:hover {
+			div.side-menu ul li a:hover,
+			div.side-menu ul li.active a
+			 {
 				background-color: #f8f9fa;
 			}
-
+			
 div.side-content { width: 83%; /* 100% - 15% for the side menu - 2% for the left margin */ }
 
 div.content-module {
@@ -674,4 +680,14 @@ div#footer {
     padding-bottom: 10px;
     padding-top: 5px;
 	 font-size:12px;
+}
+
+/*div#content div.compactRadioGroup {
+    padding-left: 1em;
+}*/
+ 
+div#content .compactRadioGroup LABEL,
+div#content .compactRadioGroup INPUT {
+    display: inline;
+	font-size:0.75em;
 }

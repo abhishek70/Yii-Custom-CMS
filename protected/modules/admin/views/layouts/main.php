@@ -28,21 +28,17 @@
 		 $this->widget('zii.widgets.CMenu',array(
 				'items'=>array(
 				array('label'=>Yii::t('adminglobal','My Profile'), 'url'=>array('user/view','id'=>Yii::app()->user->id)),
-				array('label'=>Yii::t('adminglobal','User Settings'), 'url'=>array('')),
 				array('label'=>Yii::t('adminglobal','Change Password'), 'url'=>array('user/update','id'=>Yii::app()->user->id)),
 				array('label'=>Yii::t('adminglobal','Log out'), 'url'=>array('default/logout')),
 			),
 		)); 
 		?>
 				</li>
-			
-				<li><a href="#" class="round button dark menu-email-special image-left">3 new messages</a></li>
-				<li><?php //echo CHtml::link(Yii::t('adminglobal', 'Log out'), array('default/logout'), array( 'class' => 'round button dark menu-logoff image-left' )); ?>
-				<a href="<?php echo $this->createUrl('default/logout'); ?>" class="round button dark menu-logoff image-left">Log out</a></li>
-				
+				<li class="v-sep"><a href="<?php echo $this->createUrl('default/logout'); ?>" class="round button dark menu-logoff image-left">Log out</a></li>
+				<li><span class="round button dark">Welcome <?php echo ucwords(Yii::app()->user->adminfullname); ?></span></li>
 			</ul> <!-- end nav -->
 
-					
+			
 			<form action="#" method="POST" id="search-form" class="fr">
 				<fieldset>
 					<input type="text" id="search-keyword" class="round button dark ic-search image-right" placeholder="Search..." />
@@ -76,7 +72,7 @@
 			</div> <!-- login-intro -->
 			<?php else: ?>
             <ul id="tabs" class="fl">
-				<li><?php echo CHtml::link('Dashboard',array('default/index'),array('class'=>'active-tab dashboard-tab')); ?></li>
+				<li><?php echo CHtml::link('Dashboard',array('default/index'),($this->id=='default') ? array('class'=>'active-tab dashboard-tab') : array('class'=>'dashboard-tab')); ?></li>
 			</ul>
             <?php endif; ?>
 			<!-- Change this image to your own company's logo -->
@@ -112,12 +108,14 @@
             <div class="side-menu fl">
 				
 				<h3>Side Menu</h3>
-				<ul>
-					<li><a href="#">Side menu link</a></li>
-					<li><a href="#">Another link</a></li>
-					<li><a href="#">A third link</a></li>
-					<li><a href="#">Fourth link</a></li>
-				</ul>
+          <?php 
+		 $this->widget('zii.widgets.CMenu',array(
+				'items'=>array(
+				array('label'=>'Manage Users', 'url'=>array('user/index'),'active'=>$this->id=='user'),
+				array('label'=>'Log out', 'url'=>array('default/logout')),
+			),
+		)); 
+		?>
 				
 			</div> <!-- end side-menu -->
             

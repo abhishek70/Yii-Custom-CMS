@@ -73,10 +73,18 @@ class DefaultController extends Controller {
 			
 			if($model->validate())
 			{
-				$newUser->save();
-				$message = 'Registration Completed Successfully. Login To CMS '.CHtml::link('Click Here', array('default/login'));
-				Yii::app()->user->setFlash('register',$message);
-				$this->refresh();
+				if($newUser->save())
+				{
+					$message = 'Registration Completed Successfully. Login To CMS '.CHtml::link('Click Here', array('default/login'));
+					Yii::app()->user->setFlash('register',$message);
+					$this->refresh();
+				}
+				else
+				{
+					$message = 'There is some problem while registration. Please try again';
+					Yii::app()->user->setFlash('registererror',$message);
+					$this->refresh();
+				}
 			}
 		}
 		 

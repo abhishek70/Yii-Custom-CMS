@@ -12,6 +12,16 @@
 
 <?php endif; ?>
 
+<?php if(Yii::app()->user->hasFlash('registererror')) : ?>
+
+<div class="flash-error" align="center">
+<div class="error-box round" style="width:600px; text-align:left">
+	<?php echo Yii::app()->user->getFlash('registererror'); ?>
+</div>
+</div>
+
+<?php endif; ?>
+
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'register-form',
 	'enableClientValidation'=>true,

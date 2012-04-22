@@ -1,66 +1,67 @@
-<div class="form">
+<div class="form" style="width:50%">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'user-form',
-	'enableAjaxValidation'=>false,
+	'enableAjaxValidation'=>true,
+	'enableClientValidation'=>true,
+	'clientOptions'=>array(
+		'validateOnSubmit'=>true,
+	),
+	'focus'=>array($model,'username'),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
+<fieldset>
+	<p>
 		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'username',array('maxlength'=>255,'class'=>'round full-width-input')); ?>
 		<?php echo $form->error($model,'username'); ?>
-	</div>
+	</p>
 
-	<div class="row">
+	<p>
 		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>255,'class'=>'round full-width-input')); ?>
 		<?php echo $form->error($model,'password'); ?>
-	</div>
+	</p>
+    
+     <p>
+		<?php echo $form->labelEx($model,'confirmpassword'); ?>
+        <?php echo $form->passwordField($model,'confirmpassword',array('class'=>'round full-width-input')); ?>
+		<?php echo $form->error($model,'confirmpassword'); ?>
+	</p>
 
-	<div class="row">
+	<p>
 		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>255,'class'=>'round full-width-input')); ?>
 		<?php echo $form->error($model,'email'); ?>
-	</div>
+	</p>
 
-	<div class="row">
+	<p>
 		<?php echo $form->labelEx($model,'firstname'); ?>
-		<?php echo $form->textField($model,'firstname',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'firstname',array('size'=>60,'maxlength'=>255,'class'=>'round full-width-input')); ?>
 		<?php echo $form->error($model,'firstname'); ?>
-	</div>
+	</p>
 
-	<div class="row">
+	<p>
 		<?php echo $form->labelEx($model,'lastname'); ?>
-		<?php echo $form->textField($model,'lastname',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'lastname',array('size'=>60,'maxlength'=>255,'class'=>'round full-width-input')); ?>
 		<?php echo $form->error($model,'lastname'); ?>
-	</div>
+	</p>
 
-	<div class="row">
+	<p class="radiobuttonlist">
 		<?php echo $form->labelEx($model,'isactive'); ?>
-		<?php echo $form->textField($model,'isactive',array('size'=>3,'maxlength'=>3)); ?>
+        <div class="compactRadioGroup">
+		<?php echo $form->radioButtonList($model,'isactive',array('yes'=>"Yes",'no'=>"No"),array( 'separator' => "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" )); ?>
+        </div>
 		<?php echo $form->error($model,'isactive'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'createdon'); ?>
-		<?php echo $form->textField($model,'createdon'); ?>
-		<?php echo $form->error($model,'createdon'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'updatedon'); ?>
-		<?php echo $form->textField($model,'updatedon'); ?>
-		<?php echo $form->error($model,'updatedon'); ?>
-	</div>
+	</p>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Add' : 'Edit',array('class'=>'button round blue image-right ic-add text-upper')); ?>
 	</div>
-
+</fieldset>
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->

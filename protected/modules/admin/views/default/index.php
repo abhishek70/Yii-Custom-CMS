@@ -29,8 +29,11 @@ You may customize this page by editing <tt><?php //echo __FILE__; ?></tt>
 					
 					<div class="content-module-main">
 						<div class="dashIcon span-3">
-        					<a href="#"><img alt="Customers" src="<?php echo Yii::app()->themeManager->baseUrl; ?>/images/icon-people.png"></a>
-        				<div class="dashIconText"><a href="#">Users</a></div>
+                        <?php $userimg='<img alt="Mange Users" src="'.Yii::app()->themeManager->baseUrl.'/images/icon-people.png" title="Manage Users">'; 
+						echo CHtml::link($userimg,array('user/index'));
+						?>
+        				
+        				<div class="dashIconText"><?php echo CHtml::link('Manage Users',array('user/index')); ?></div>
     				    </div>
 			
 					</div> <!-- end content-module-main -->
