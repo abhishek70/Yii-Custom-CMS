@@ -61,11 +61,12 @@ class DefaultController extends Controller {
 	  {
 
 		  $model=new RegisterForm;
-		  $newUser = new User;
+		  
 		  
 		if(isset($_POST['RegisterForm']))
 		{
-			$model->attributes=$_POST['RegisterForm'];
+                    $newUser = new User;
+                    $model->attributes=$_POST['RegisterForm'];
 			$newUser->attributes = $model->attributes;
 			$newUser->password=md5($model->password);
 			$newUser->isactive='yes';
