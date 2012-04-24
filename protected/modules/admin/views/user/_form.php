@@ -26,11 +26,11 @@
 		<?php echo $form->error($model,'password'); ?>
 	</p>
     
-     <p>
-		<?php echo $form->labelEx($model,'confirmpassword'); ?>
-        <?php echo $form->passwordField($model,'confirmpassword',array('class'=>'round full-width-input')); ?>
-		<?php echo $form->error($model,'confirmpassword'); ?>
-	</p>
+    <!-- <p>
+		<?php //echo $form->labelEx($model,'confirmpassword'); ?>
+        <?php //echo $form->passwordField($model,'confirmpassword',array('class'=>'round full-width-input')); ?>
+		<?php //echo $form->error($model,'confirmpassword'); ?>
+	</p>-->
 
 	<p>
 		<?php echo $form->labelEx($model,'email'); ?>
@@ -59,7 +59,7 @@
 	</p>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Add' : 'Edit',array('class'=>'button round blue image-right ic-add text-upper')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Add' : 'Update',array('class'=>'button round blue image-right ic-add text-upper')); ?>
 	</div>
 </fieldset>
 <?php $this->endWidget(); ?>

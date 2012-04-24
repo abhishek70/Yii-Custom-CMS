@@ -20,23 +20,28 @@ class User extends CActiveRecord
 	public $lastname;
 	public $username;
 	public $password;
-	public $confirmpassword;
+	//public $confirmpassword;
 	public $email;
 	public $isactive;
 	public $createdon;
+	public $initialPassword;
 	
 	public function rules()
 	{
 		return array(
-			array('username, password, confirmpassword, email, firstname, lastname', 'required'),
+			array('username, email, firstname, lastname', 'required'),
+			array('password', 'required','on'=>'insert'),
 			array('username, password, email, firstname, lastname', 'length', 'max'=>255),
-			array('username, password, confirmpassword, firstname, lastname, email', 'safe'),
+			array('username, password, firstname, lastname, email', 'safe'),
 			array('username', 'match', 'pattern'=>'/^[A-Z\ \.a-z0-9_-]+$/u', 'message'=>'Incorrect symbols. Allowed Characters: A-z 0-9 . - _")'),
-			array('username', 'availableUsername'),
-			array('email', 'availableuseremail'),
+			/*array('username', 'availableUsername','on'=>'insert'),
+			array('email', 'availableuseremail','on'=>'insert'),
+			array('username','unique','on'=>'update'),
+			array('email','unique','on'=>'update'),*/
+			array('username','unique'),
+			array('email','unique'),
 			array('password', 'length', 'min'=>8, 'max'=>255),
 			array('password', 'match', 'pattern'=>'/^(?=.*[a-zA-Z0-9]).{8,}$/', 'message'=>'Your password is too weak, needs to be at least 8 characters'),
-			//array('confirmpassword', 'compare', 'compareAttribute'=>'password', 'message'=>'Passwords do not match'),
 			array('email', 'email','checkMX' => true),
 			
 			// The following rule is used by search().
@@ -107,6 +112,25 @@ class User extends CActiveRecord
  		 return array( 
          );
  	}
+	
+	public function beforeSave()
+    {
+        // in this case, we will use the old hashed password.
+        if(empty($this->password) && !empty($this->initialPassword))
+            $this->password=$this->initialPassword;
+ 
+        return parent::beforeSave();
+    }
+	
+	
+	public function afterFind()
+    {
+        //reset the password to null because we don't want the hash to be shown.
+        $this->initialPassword = $this->password;
+        $this->password = null;
+ 
+        parent::afterFind();
+    }
 	
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
