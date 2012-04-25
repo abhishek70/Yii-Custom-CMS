@@ -691,3 +691,10 @@ div#content .compactRadioGroup INPUT {
     display: inline;
 	font-size:0.75em;
 }
+
+.dropdowncss {
+padding:6px;
+width:110px;
+border: 1px solid #D5D5D5;
+font-size:12px;
+}

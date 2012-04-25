@@ -66,31 +66,6 @@ class User extends CActiveRecord
 		);
 	}
 	
-	public function availableUsername($attribute,$params)
-	{
-		if (User::model()->exists(
-			array(
-			      'condition'=>'username=:username',
-			      'params'=>array(':username'=>$this->username),
-			      ))
-				)
-		{
-			$this->addError('username','This username is already in use.Please enter another one.');
-		}
-	}
-	
-	public function availableuseremail($attribute,$params)
-	{
-		if (User::model()->exists(
-			array(
-			      'condition'=>'email=:email',
-			      'params'=>array(':email'=>$this->email),
-			      ))
-				)
-		{
-			$this->addError('email','This email id is already used.Please enter another one.');
-		}
-	}
 
 	public static function model($className=__CLASS__)
 	{

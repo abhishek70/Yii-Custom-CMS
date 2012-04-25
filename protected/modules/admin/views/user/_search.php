@@ -6,11 +6,6 @@
 )); ?>
 <fieldset>
 	<p>
-		<?php echo $form->label($model,'id'); ?>
-		<?php echo $form->textField($model,'id',array('class'=>'round')); ?>
-	</p>
-
-	<p>
 		<?php echo $form->label($model,'username'); ?>
 		<?php echo $form->textField($model,'username',array('size'=>60,'maxlength'=>255,'class'=>'round')); ?>
 	</p>
@@ -32,7 +27,7 @@
 
 	<p>
 		<?php echo $form->label($model,'isactive'); ?>
-		<?php echo $form->textField($model,'isactive',array('size'=>3,'maxlength'=>3,'class'=>'round')); ?>
+		<?php echo $form->dropDownList($model,'isactive',array(''=>'Select Status','yes'=>"Yes",'no'=>"No"),array( 'class' =>'round dropdowncss' )); ?>
 	</p>
 
 	<div class="row buttons">

@@ -730,3 +730,1094 @@ in D:\wamp\www\sampleproject\index.php (13)
 2012/04/15 16:32:45 [warning] [application] Failed to set unsafe attribute "updatedon" of "User".
 in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (71)
 in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 16:57:32 [error] [exception.CException] exception 'CException' with message 'Property "RegisterForm.isNewRecord" is not defined.' in D:\wamp\www\yiiframework\base\CComponent.php:131
+Stack trace:
+#0 D:\wamp\www\sampleproject\protected\modules\admin\views\user\_form.php(62): CComponent->__get('isNewRecord')
+#1 D:\wamp\www\yiiframework\web\CBaseController.php(127): require('D:\wamp\www\sam...')
+#2 D:\wamp\www\yiiframework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sam...', Array, true)
+#3 D:\wamp\www\yiiframework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sam...', Array, true)
+#4 D:\wamp\www\sampleproject\protected\modules\admin\views\user\create.php(23): CController->renderPartial('_form', Array)
+#5 D:\wamp\www\yiiframework\web\CBaseController.php(127): require('D:\wamp\www\sam...')
+#6 D:\wamp\www\yiiframework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sam...', Array, true)
+#7 D:\wamp\www\yiiframework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sam...', Array, true)
+#8 D:\wamp\www\yiiframework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#9 D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php(83): CController->render('create', Array)
+#10 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): UserController->actionCreate()
+#11 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 D:\wamp\www\yiiframework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 D:\wamp\www\yiiframework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#18 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('create')
+#20 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/user/crea...')
+#21 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/sampleproject/admin/user/create
+---
+2012/04/24 17:19:48 [error] [exception.CException] exception 'CException' with message 'Property "User.confirmpassword" is not defined.' in D:\wamp\www\yiiframework\base\CComponent.php:131
+Stack trace:
+#0 D:\wamp\www\yiiframework\db\ar\CActiveRecord.php(144): CComponent->__get('confirmpassword')
+#1 D:\wamp\www\yiiframework\web\helpers\CHtml.php(2044): CActiveRecord->__get('confirmpassword')
+#2 D:\wamp\www\yiiframework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(User), 'confirmpassword')
+#3 D:\wamp\www\yiiframework\web\helpers\CHtml.php(1238): CHtml::activeInputField('password', Object(User), 'confirmpassword', Array)
+#4 D:\wamp\www\yiiframework\web\widgets\CActiveForm.php(605): CHtml::activePasswordField(Object(User), 'confirmpassword', Array)
+#5 D:\wamp\www\sampleproject\protected\modules\admin\views\user\_form.php(31): CActiveForm->passwordField(Object(User), 'confirmpassword', Array)
+#6 D:\wamp\www\yiiframework\web\CBaseController.php(127): require('D:\wamp\www\sam...')
+#7 D:\wamp\www\yiiframework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sam...', Array, true)
+#8 D:\wamp\www\yiiframework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sam...', Array, true)
+#9 D:\wamp\www\sampleproject\protected\modules\admin\views\user\create.php(23): CController->renderPartial('_form', Array)
+#10 D:\wamp\www\yiiframework\web\CBaseController.php(127): require('D:\wamp\www\sam...')
+#11 D:\wamp\www\yiiframework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sam...', Array, true)
+#12 D:\wamp\www\yiiframework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sam...', Array, true)
+#13 D:\wamp\www\yiiframework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php(79): CController->render('create', Array)
+#15 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): UserController->actionCreate()
+#16 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 D:\wamp\www\yiiframework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 D:\wamp\www\yiiframework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#23 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('create')
+#25 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/user/crea...')
+#26 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/sampleproject/admin/user/create
+---
+2012/04/24 17:20:48 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:22:56 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:22:56 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:22:56 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:23:24 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:23:24 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:23:24 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:23:35 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:23:35 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:23:35 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:23:42 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:23:42 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:23:42 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:24:32 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:24:32 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:24:32 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:26:28 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:26:28 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:27:19 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:27:19 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:28:22 [error] [exception.CException] exception 'CException' with message 'Property "User.passwordrepeat" is not defined.' in D:\wamp\www\yiiframework\base\CComponent.php:131
+Stack trace:
+#0 D:\wamp\www\yiiframework\db\ar\CActiveRecord.php(144): CComponent->__get('passwordrepeat')
+#1 D:\wamp\www\yiiframework\web\helpers\CHtml.php(2044): CActiveRecord->__get('passwordrepeat')
+#2 D:\wamp\www\yiiframework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(User), 'passwordrepeat')
+#3 D:\wamp\www\yiiframework\web\helpers\CHtml.php(1238): CHtml::activeInputField('password', Object(User), 'passwordrepeat', Array)
+#4 D:\wamp\www\yiiframework\web\widgets\CActiveForm.php(605): CHtml::activePasswordField(Object(User), 'passwordrepeat', Array)
+#5 D:\wamp\www\sampleproject\protected\modules\admin\views\user\_form.php(31): CActiveForm->passwordField(Object(User), 'passwordrepeat', Array)
+#6 D:\wamp\www\yiiframework\web\CBaseController.php(127): require('D:\wamp\www\sam...')
+#7 D:\wamp\www\yiiframework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sam...', Array, true)
+#8 D:\wamp\www\yiiframework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sam...', Array, true)
+#9 D:\wamp\www\sampleproject\protected\modules\admin\views\user\create.php(23): CController->renderPartial('_form', Array)
+#10 D:\wamp\www\yiiframework\web\CBaseController.php(127): require('D:\wamp\www\sam...')
+#11 D:\wamp\www\yiiframework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sam...', Array, true)
+#12 D:\wamp\www\yiiframework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sam...', Array, true)
+#13 D:\wamp\www\yiiframework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php(79): CController->render('create', Array)
+#15 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): UserController->actionCreate()
+#16 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 D:\wamp\www\yiiframework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 D:\wamp\www\yiiframework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#23 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('create')
+#25 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/user/crea...')
+#26 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/sampleproject/admin/user/create
+---
+2012/04/24 17:28:55 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:28:55 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:31:41 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:31:43 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:31:46 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:31:51 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:32:02 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:32:04 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:32:07 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:32:12 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:32:22 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:32:30 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:32:35 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:32:38 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:32:39 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (181)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:32:39 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:33:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\wamp\www\yiiframework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\wamp\www\yiiframework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\wamp\www\yiiframework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('delete')
+#8 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/user/dele...')
+#9 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sampleproject/admin/user/delete?id=17&ajax=user-grid
+HTTP_REFERER=http://localhost/sampleproject/admin/user/index
+---
+2012/04/24 17:34:00 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (182)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:34:03 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (182)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:34:04 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (182)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:34:13 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (182)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:34:15 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (182)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:34:16 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (182)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:34:17 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (182)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:34:17 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:35:33 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:35:36 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:35:40 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:35:41 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:35:42 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:35:44 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:35:45 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:35:45 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:35:45 [error] [php] Undefined index: isactive (D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php:73)
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(134): UserController->runAction()
+#1 D:\wamp\www\yiiframework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\wamp\www\yiiframework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#4 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yiiframework\web\CController.php(266): UserController->runActionWithFilters()
+#7 D:\wamp\www\yiiframework\web\CWebApplication.php(276): UserController->run()
+#8 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\sampleproject\index.php(13): CWebApplication->run()
+REQUEST_URI=/sampleproject/admin/user/create
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (73)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:37:37 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:37:39 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:37:41 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:37:46 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:37:47 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:37:48 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:37:49 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:38:44 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:38:47 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:38:48 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:38:51 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:38:52 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:38:54 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:38:54 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:38:55 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:39:36 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:39:40 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:39:41 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:39:43 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:39:43 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:39:45 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:39:45 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:39:45 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:44:55 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (185)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:44:56 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (185)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:44:57 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (185)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:44:58 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (185)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:44:59 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (185)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:45:01 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (185)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:45:01 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (185)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:45:02 [error] [php] Undefined index: isactive (D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php:72)
+Stack trace:
+#0 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(134): UserController->runAction()
+#1 D:\wamp\www\yiiframework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\wamp\www\yiiframework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#4 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yiiframework\web\CController.php(266): UserController->runActionWithFilters()
+#7 D:\wamp\www\yiiframework\web\CWebApplication.php(276): UserController->run()
+#8 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\sampleproject\index.php(13): CWebApplication->run()
+REQUEST_URI=/sampleproject/admin/user/create
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:45:53 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:46:24 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:46:27 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:46:28 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:46:32 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:46:34 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:46:36 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:46:36 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:47:06 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:47:10 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:47:10 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:47:14 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:47:16 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:47:17 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:47:17 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:47:18 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:50:04 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:50:11 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:50:41 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:50:47 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:51:04 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:51:09 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:51:13 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:51:20 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:51:22 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:51:22 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:51:23 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:51:53 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:51:59 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:52:00 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:52:00 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:52:00 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:52:01 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:52:01 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:52:01 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:52:01 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:53:02 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (187)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:53:38 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:53:50 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 17:53:52 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:07:30 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (183)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:07:31 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:17:18 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:17:18 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:18:22 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (188)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:18:38 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (100)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:18:58 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (188)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:20:46 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (188)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:21:02 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:25:30 [error] [exception.CException] exception 'CException' with message 'User has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in D:\wamp\www\yiiframework\base\CModel.php:287
+Stack trace:
+#0 D:\wamp\www\yiiframework\base\CModel.php(259): CModel->createValidators()
+#1 D:\wamp\www\yiiframework\base\CModel.php(302): CModel->getValidators('username')
+#2 D:\wamp\www\yiiframework\web\helpers\CHtml.php(1185): CModel->isAttributeRequired('username')
+#3 D:\wamp\www\yiiframework\web\widgets\CActiveForm.php(560): CHtml::activeLabelEx(Object(User), 'username', Array)
+#4 D:\wamp\www\sampleproject\protected\modules\admin\views\user\_form.php(18): CActiveForm->labelEx(Object(User), 'username')
+#5 D:\wamp\www\yiiframework\web\CBaseController.php(127): require('D:\wamp\www\sam...')
+#6 D:\wamp\www\yiiframework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sam...', Array, true)
+#7 D:\wamp\www\yiiframework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sam...', Array, true)
+#8 D:\wamp\www\sampleproject\protected\modules\admin\views\user\update.php(26): CController->renderPartial('_form', Array)
+#9 D:\wamp\www\yiiframework\web\CBaseController.php(127): require('D:\wamp\www\sam...')
+#10 D:\wamp\www\yiiframework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sam...', Array, true)
+#11 D:\wamp\www\yiiframework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sam...', Array, true)
+#12 D:\wamp\www\yiiframework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#13 D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php(108): CController->render('update', Array)
+#14 [internal function]: UserController->actionUpdate('1')
+#15 D:\wamp\www\yiiframework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#16 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#17 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 D:\wamp\www\yiiframework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 D:\wamp\www\yiiframework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#24 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('update')
+#26 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/user/upda...')
+#27 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sampleproject/admin/user/update?id=1
+---
+2012/04/24 18:26:39 [error] [php] include(.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\www\yiiframework\YiiBase.php:418)
+Stack trace:
+#0 D:\wamp\www\yiiframework\validators\CValidator.php(171): import()
+#1 D:\wamp\www\yiiframework\base\CModel.php(285): createValidator()
+#2 D:\wamp\www\yiiframework\base\CModel.php(259): User->createValidators()
+#3 D:\wamp\www\yiiframework\base\CModel.php(302): User->getValidators()
+#4 D:\wamp\www\yiiframework\web\helpers\CHtml.php(1185): User->isAttributeRequired()
+#5 D:\wamp\www\yiiframework\web\widgets\CActiveForm.php(560): activeLabelEx()
+#6 D:\wamp\www\sampleproject\protected\modules\admin\views\user\_form.php(18): CActiveForm->labelEx()
+#7 D:\wamp\www\yiiframework\web\CBaseController.php(127): require()
+#8 D:\wamp\www\yiiframework\web\CBaseController.php(96): UserController->renderInternal()
+#9 D:\wamp\www\yiiframework\web\CController.php(870): UserController->renderFile()
+#10 D:\wamp\www\sampleproject\protected\modules\admin\views\user\update.php(26): UserController->renderPartial()
+#11 D:\wamp\www\yiiframework\web\CBaseController.php(127): require()
+#12 D:\wamp\www\yiiframework\web\CBaseController.php(96): UserController->renderInternal()
+#13 D:\wamp\www\yiiframework\web\CController.php(870): UserController->renderFile()
+#14 D:\wamp\www\yiiframework\web\CController.php(783): UserController->renderPartial()
+#15 D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php(108): UserController->render()
+#16 unknown(0): UserController->actionUpdate()
+#17 D:\wamp\www\yiiframework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#18 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#19 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams()
+#20 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(134): UserController->runAction()
+#21 D:\wamp\www\yiiframework\web\filters\CFilter.php(41): CFilterChain->run()
+#22 D:\wamp\www\yiiframework\web\CController.php(1146): CAccessControlFilter->filter()
+#23 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#24 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#26 D:\wamp\www\yiiframework\web\CController.php(266): UserController->runActionWithFilters()
+#27 D:\wamp\www\yiiframework\web\CWebApplication.php(276): UserController->run()
+#28 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController()
+#29 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#30 D:\wamp\www\sampleproject\index.php(13): CWebApplication->run()
+REQUEST_URI=/sampleproject/admin/user/update?id=1
+in D:\wamp\www\sampleproject\protected\modules\admin\views\user\_form.php (18)
+in D:\wamp\www\sampleproject\protected\modules\admin\views\user\update.php (26)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (108)
+2012/04/24 18:29:33 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:29:34 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:29:39 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:29:39 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:30:02 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:30:03 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:35:19 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:35:19 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:35:35 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:35:35 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:35:49 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:35:49 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:36:01 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:36:01 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:37:10 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:37:10 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:37:10 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:37:23 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:37:23 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:37:23 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:37:33 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:37:33 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:37:33 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:38:08 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:38:09 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:38:18 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:38:25 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:38:27 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:38:31 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:38:37 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:38:42 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:38:44 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:38:44 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:39:02 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:39:06 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:39:06 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:39:20 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:39:21 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:39:21 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:51:18 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:51:19 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:51:29 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:51:32 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:51:33 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:51:43 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:51:44 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:51:44 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:52:00 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:52:06 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:52:18 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:52:19 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:53:35 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:53:36 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:53:44 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:54:05 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:54:28 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:54:29 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:55:13 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:55:13 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:55:13 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:55:31 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:55:31 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:55:31 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:55:38 [warning] [application] Failed to set unsafe attribute "confirmpassword" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:55:38 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 18:55:38 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (70)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:02:41 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:02:43 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:02:45 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:02:51 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:02:56 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:02:57 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:02:59 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:02:59 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:09 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:12 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:18 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:19 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:26 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:27 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:27 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:36 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:40 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:43 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:45 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:47 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:47 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (68)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/24 19:03:47 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (72)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/25 17:08:35 [error] [exception.CException] exception 'CException' with message 'Property "User.initialPassword" is not defined.' in D:\wamp\www\yiiframework\base\CComponent.php:174
+Stack trace:
+#0 D:\wamp\www\yiiframework\db\ar\CActiveRecord.php(160): CComponent->__set('initialPassword', 'f589a6959f3e040...')
+#1 D:\wamp\www\sampleproject\protected\components\ActiveRecords\user.php(129): CActiveRecord->__set('initialPassword', 'f589a6959f3e040...')
+#2 D:\wamp\www\yiiframework\db\ar\CActiveRecord.php(1799): User->afterFind()
+#3 D:\wamp\www\yiiframework\db\ar\CActiveRecord.php(1287): CActiveRecord->populateRecord(Array)
+#4 D:\wamp\www\yiiframework\db\ar\CActiveRecord.php(1455): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\wamp\www\sampleproject\protected\modules\admin\components\UserIdentity.php(9): CActiveRecord->findByAttributes(Array)
+#6 D:\wamp\www\sampleproject\protected\modules\admin\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\wamp\www\yiiframework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\wamp\www\yiiframework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\wamp\www\yiiframework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php(48): CModel->validate()
+#11 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#12 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\yiiframework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('login')
+#16 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/default/l...')
+#17 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/sampleproject/admin/default/login
+HTTP_REFERER=http://localhost/sampleproject/admin/default/login
+---
+2012/04/25 17:15:49 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (186)
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (94)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/25 17:15:50 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (98)
+in D:\wamp\www\sampleproject\index.php (13)
+2012/04/25 18:20:01 [error] [exception.CException] exception 'CException' with message 'Property "CCheckBoxColumn.style" is not defined.' in D:\wamp\www\yiiframework\base\CComponent.php:174
+Stack trace:
+#0 D:\wamp\www\yiiframework\YiiBase.php(222): CComponent->__set('style', 'text-align:cent...')
+#1 D:\wamp\www\yiiframework\zii\widgets\grid\CGridView.php(313): YiiBase::createComponent(Array, Object(CGridView))
+#2 D:\wamp\www\yiiframework\zii\widgets\grid\CGridView.php(284): CGridView->initColumns()
+#3 D:\wamp\www\yiiframework\web\CBaseController.php(148): CGridView->init()
+#4 D:\wamp\www\yiiframework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 D:\wamp\www\sampleproject\protected\modules\admin\views\user\admin.php(78): CBaseController->widget('zii.widgets.gri...', Array)
+#6 D:\wamp\www\yiiframework\web\CBaseController.php(127): require('D:\wamp\www\sam...')
+#7 D:\wamp\www\yiiframework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sam...', Array, true)
+#8 D:\wamp\www\yiiframework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sam...', Array, true)
+#9 D:\wamp\www\yiiframework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#10 D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php(147): CController->render('admin', Array)
+#11 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): UserController->actionIndex()
+#12 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\yiiframework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 D:\wamp\www\yiiframework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#19 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('index')
+#21 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/user/inde...')
+#22 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sampleproject/admin/user/index
+---
+2012/04/25 18:20:12 [error] [exception.CException] exception 'CException' with message 'Property "CCheckBoxColumn.style" is not defined.' in D:\wamp\www\yiiframework\base\CComponent.php:174
+Stack trace:
+#0 D:\wamp\www\yiiframework\YiiBase.php(222): CComponent->__set('style', 'text-align:cent...')
+#1 D:\wamp\www\yiiframework\zii\widgets\grid\CGridView.php(313): YiiBase::createComponent(Array, Object(CGridView))
+#2 D:\wamp\www\yiiframework\zii\widgets\grid\CGridView.php(284): CGridView->initColumns()
+#3 D:\wamp\www\yiiframework\web\CBaseController.php(148): CGridView->init()
+#4 D:\wamp\www\yiiframework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 D:\wamp\www\sampleproject\protected\modules\admin\views\user\admin.php(78): CBaseController->widget('zii.widgets.gri...', Array)
+#6 D:\wamp\www\yiiframework\web\CBaseController.php(127): require('D:\wamp\www\sam...')
+#7 D:\wamp\www\yiiframework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sam...', Array, true)
+#8 D:\wamp\www\yiiframework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sam...', Array, true)
+#9 D:\wamp\www\yiiframework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#10 D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php(147): CController->render('admin', Array)
+#11 D:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): UserController->actionIndex()
+#12 D:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\yiiframework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 D:\wamp\www\yiiframework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 D:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#19 D:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('index')
+#21 D:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/user/inde...')
+#22 D:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sampleproject/admin/user/index
+---
