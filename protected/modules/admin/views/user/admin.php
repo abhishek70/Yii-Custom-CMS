@@ -20,6 +20,11 @@ $('.search-form form').submit(function(){
 	});
 	return false;
 });
+$('#reset-button').live('click',function(){
+            this.form.reset();
+            $(this.form).submit();
+            return false;
+        });
 ");
 ?>
 

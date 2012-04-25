@@ -208,10 +208,11 @@ p a, p a:hover { border-bottom: 1px dotted; }
 /* ---------- BUTTONS ---------- */
 .button {
 	padding: 0.833em; /* 10/12 */
-	
+	vertical-align:text-bottom;
 	display: inline-block;
 	text-decoration: none;
 	background-repeat: no-repeat;
+	font-weight:bold;
 }
 
 .dark {
@@ -302,7 +303,7 @@ form input[type="text"], input[type="password"], textarea {
 	
 form input[type="checkbox"], form input[type="radio"] { margin-right: 0.833em; /* 10/12 */ }
 
-form input[type="submit"] {
+form input[type="submit"], form input[type="reset"], form input[type="button"]{
 	border: none;
 	cursor: pointer;
 	padding: 0.833em; /* 10/12 */
@@ -313,6 +314,8 @@ form input[type="submit"] {
 	font-weight: bold;
 	text-transform: uppercase;
 }
+
+
 
 form#search-form input {
 	border: none;
@@ -697,4 +700,24 @@ padding:6px;
 width:110px;
 border: 1px solid #D5D5D5;
 font-size:12px;
+}
+
+div.form .errorSummary
+{
+	border: 2px solid #C00;
+	padding: 7px 7px 12px 7px;
+	margin: 0 0 20px 0;
+	background: #FEE;
+	font-size: 0.75em;
+}
+div.form .errorSummary p
+{
+	margin: 0;
+	padding: 5px;
+}
+
+div.form .errorSummary ul
+{
+	margin: 0;
+	padding: 0 0 0 20px;
 }

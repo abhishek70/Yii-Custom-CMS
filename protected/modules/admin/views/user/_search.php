@@ -27,11 +27,12 @@
 
 	<p>
 		<?php echo $form->label($model,'isactive'); ?>
-		<?php echo $form->dropDownList($model,'isactive',array(''=>'Select Status','yes'=>"Yes",'no'=>"No"),array( 'class' =>'round dropdowncss' )); ?>
+		<?php echo $form->dropDownList($model,'isactive',array('yes'=>"Yes",'no'=>"No"),array('empty' => 'Select Status','class' =>'round dropdowncss' )); ?>
 	</p>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search',array('class'=>'button round blue image-right ic-search text-upper')); ?>
+        <?php echo CHtml::resetButton('Refresh',array('id'=>'reset-button','class'=>'button round blue image-right ic-refresh text-upper')); ?>
 	</div>
 </fieldset>
 <?php $this->endWidget(); ?>
