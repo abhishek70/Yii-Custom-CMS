@@ -39,7 +39,7 @@ class BootSelGridView extends BootGridView
             }
             //publish required assets
             if($this->selBaseScriptUrl===null)
-                $this->selBaseScriptUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('ext.selgridview.assets'));
+                $this->selBaseScriptUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('ext.selgridview.selgridviewjs'));
 
         }
         parent::init();
