@@ -60,6 +60,13 @@
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Add' : 'Update',array('class'=>'button round blue image-right ic-add text-upper')); ?>
+        <?php echo CHtml::resetButton('Reset',array('id'=>'reset-button','class'=>'button round blue image-right ic-refresh text-upper')); ?>
+        <?php echo CHtml::link('Cancel','index', array('class'=>'button round blue image-right ic-refresh text-upper')); ?>
+        <?php 
+		if($model->id!='') {
+		echo CHtml::button('Delete', array("submit"=>array('delete', 'id'=>$model->id), 'confirm' => 'Are you sure you want to delete this item?','class'=>'button round blue image-right ic-delete text-upper')); 
+		 }
+		?>
 	</div>
 </fieldset>
 <?php $this->endWidget(); ?>

@@ -6,11 +6,6 @@
 )); ?>
 <fieldset>
 	<p>
-		<?php echo $form->label($model,'id'); ?>
-		<?php echo $form->textField($model,'id',array('class'=>'round')); ?>
-	</p>
-
-	<p>
 		<?php echo $form->label($model,'username'); ?>
 		<?php echo $form->textField($model,'username',array('size'=>60,'maxlength'=>255,'class'=>'round')); ?>
 	</p>
@@ -32,11 +27,12 @@
 
 	<p>
 		<?php echo $form->label($model,'isactive'); ?>
-		<?php echo $form->textField($model,'isactive',array('size'=>3,'maxlength'=>3,'class'=>'round')); ?>
+		<?php echo $form->dropDownList($model,'isactive',array('yes'=>"Yes",'no'=>"No"),array('empty' => 'Select Status','class' =>'round dropdowncss' )); ?>
 	</p>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search',array('class'=>'button round blue image-right ic-search text-upper')); ?>
+        <?php echo CHtml::resetButton('Refresh',array('id'=>'reset-button','class'=>'button round blue image-right ic-refresh text-upper')); ?>
 	</div>
 </fieldset>
 <?php $this->endWidget(); ?>

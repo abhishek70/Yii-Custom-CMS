@@ -20,6 +20,11 @@ $('.search-form form').submit(function(){
 	});
 	return false;
 });
+$('#reset-button').live('click',function(){
+            this.form.reset();
+            $(this.form).submit();
+            return false;
+        });
 ");
 ?>
 
@@ -47,19 +52,23 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 )); ?>
 </div><!-- search-form -->
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
+<?php $this->widget('ext.selgridview.SelGridView', array(
 	'id'=>'user-grid',
 	'dataProvider'=>$model->search(),
+	'selectableRows' => 2,
 	'filter'=>$model,
+	'pager' => array('cssFile' => Yii::app()->themeManager->baseUrl . '/css/cgridview/cgridview.css'),
 	'cssFile' => Yii::app()->themeManager->baseUrl . '/css/cgridview/cgridview.css',
 	'columns'=>array(
-		'id',
+		array(
+          'class' => 'CCheckBoxColumn',
+        ),
 		'username',
 		'email',
 		'firstname',
 		'lastname',
-		/*
 		'isactive',
+		/*
 		'createdon',
 		'updatedon',
 		*/
@@ -72,5 +81,17 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		),
 	),
 )); ?>
+
+<div style="font-size:0.75em;" >									
+<label for="table-select-actions">With selected:</label>
+
+<select id="table-select-actions" class="round dropdowncss">
+    <option value="Delete">Delete</option>
+    <option value="Export">Export</option>
+    <option value="Archive">Archive</option>
+</select>
+
+<a class="round button blue text-upper small-button" href="#">Apply to selected</a>	
+</div>	
 </div>
 </div>
