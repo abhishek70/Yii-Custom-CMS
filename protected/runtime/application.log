@@ -730,3 +730,122 @@ in D:\wamp\www\sampleproject\index.php (13)
 2012/04/15 16:32:45 [warning] [application] Failed to set unsafe attribute "updatedon" of "User".
 in D:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php (71)
 in D:\wamp\www\sampleproject\index.php (13)
+2012/04/16 06:49:10 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in C:\wamp\www\sampleproject\index.php (13)
+2012/04/16 06:49:10 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in C:\wamp\www\sampleproject\index.php (13)
+2012/04/16 06:49:56 [warning] [application] Failed to set unsafe attribute "isactive" of "User".
+in C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in C:\wamp\www\sampleproject\index.php (13)
+2012/04/16 06:49:56 [warning] [application] Failed to set unsafe attribute "createdon" of "User".
+in C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (69)
+in C:\wamp\www\sampleproject\index.php (13)
+2012/04/18 05:14:39 [error] [php] Object of class AdminModule could not be converted to string (C:\wamp\www\sampleproject\protected\modules\admin\views\layouts\main.php:34)
+Stack trace:
+#0 C:\wamp\www\yiiframework\web\CController.php(785): DefaultController->renderFile()
+#1 C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php(18): DefaultController->render()
+#2 C:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#3 C:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\yiiframework\web\CController.php(287): DefaultController->runAction()
+#5 C:\wamp\www\yiiframework\web\CController.php(266): DefaultController->runActionWithFilters()
+#6 C:\wamp\www\yiiframework\web\CWebApplication.php(276): DefaultController->run()
+#7 C:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 C:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\sampleproject\index.php(13): CWebApplication->run()
+REQUEST_URI=/sampleproject/admin/default/index
+in C:\wamp\www\sampleproject\protected\modules\admin\views\layouts\main.php (34)
+in C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (18)
+in C:\wamp\www\sampleproject\index.php (13)
+2012/04/18 05:15:12 [error] [php] Missing argument 1 for CModule::getModule(), called in C:\wamp\www\sampleproject\protected\modules\admin\views\layouts\main.php on line 34 and defined (C:\wamp\www\yiiframework\base\CModule.php:270)
+Stack trace:
+#0 C:\wamp\www\yiiframework\web\CBaseController.php(96): DefaultController->renderInternal()
+#1 C:\wamp\www\yiiframework\web\CController.php(785): DefaultController->renderFile()
+#2 C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php(18): DefaultController->render()
+#3 C:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#4 C:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yiiframework\web\CController.php(287): DefaultController->runAction()
+#6 C:\wamp\www\yiiframework\web\CController.php(266): DefaultController->runActionWithFilters()
+#7 C:\wamp\www\yiiframework\web\CWebApplication.php(276): DefaultController->run()
+#8 C:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\sampleproject\index.php(13): CWebApplication->run()
+REQUEST_URI=/sampleproject/admin/default/index
+in C:\wamp\www\sampleproject\protected\modules\admin\views\layouts\main.php (34)
+in C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (18)
+in C:\wamp\www\sampleproject\index.php (13)
+2012/04/18 05:20:57 [error] [php] Missing argument 1 for CModule::getModule(), called in C:\wamp\www\sampleproject\protected\modules\admin\views\layouts\main.php on line 34 and defined (C:\wamp\www\yiiframework\base\CModule.php:270)
+Stack trace:
+#0 C:\wamp\www\yiiframework\web\CBaseController.php(96): DefaultController->renderInternal()
+#1 C:\wamp\www\yiiframework\web\CController.php(785): DefaultController->renderFile()
+#2 C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php(18): DefaultController->render()
+#3 C:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#4 C:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yiiframework\web\CController.php(287): DefaultController->runAction()
+#6 C:\wamp\www\yiiframework\web\CController.php(266): DefaultController->runActionWithFilters()
+#7 C:\wamp\www\yiiframework\web\CWebApplication.php(276): DefaultController->run()
+#8 C:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\sampleproject\index.php(13): CWebApplication->run()
+REQUEST_URI=/sampleproject/admin/default/index
+in C:\wamp\www\sampleproject\protected\modules\admin\views\layouts\main.php (34)
+in C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (18)
+in C:\wamp\www\sampleproject\index.php (13)
+2012/04/18 05:20:59 [error] [php] Missing argument 1 for CModule::getModule(), called in C:\wamp\www\sampleproject\protected\modules\admin\views\layouts\main.php on line 34 and defined (C:\wamp\www\yiiframework\base\CModule.php:270)
+Stack trace:
+#0 C:\wamp\www\yiiframework\web\CBaseController.php(96): DefaultController->renderInternal()
+#1 C:\wamp\www\yiiframework\web\CController.php(785): DefaultController->renderFile()
+#2 C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php(18): DefaultController->render()
+#3 C:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#4 C:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yiiframework\web\CController.php(287): DefaultController->runAction()
+#6 C:\wamp\www\yiiframework\web\CController.php(266): DefaultController->runActionWithFilters()
+#7 C:\wamp\www\yiiframework\web\CWebApplication.php(276): DefaultController->run()
+#8 C:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\sampleproject\index.php(13): CWebApplication->run()
+REQUEST_URI=/sampleproject/admin/default/index
+in C:\wamp\www\sampleproject\protected\modules\admin\views\layouts\main.php (34)
+in C:\wamp\www\sampleproject\protected\modules\admin\controllers\DefaultController.php (18)
+in C:\wamp\www\sampleproject\index.php (13)
+2012/04/18 08:20:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yiiframework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yiiframework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yiiframework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yiiframework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('delete')
+#8 C:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/user/dele...')
+#9 C:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sampleproject/admin/user/delete?id=2&ajax=user-grid
+HTTP_REFERER=http://localhost/sampleproject/admin/user/
+---
+2012/04/18 08:23:12 [error] [exception.CException] exception 'CException' with message 'Property "UserController.user" is not defined.' in C:\wamp\www\yiiframework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\sampleproject\protected\modules\admin\views\layouts\main.php(16): CComponent->__get('user')
+#1 C:\wamp\www\yiiframework\web\CBaseController.php(127): require('C:\wamp\www\sam...')
+#2 C:\wamp\www\yiiframework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sam...', Array, true)
+#3 C:\wamp\www\yiiframework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\sam...', Array, true)
+#4 C:\wamp\www\sampleproject\protected\modules\admin\controllers\UserController.php(156): CController->render('admin', Array)
+#5 C:\wamp\www\yiiframework\web\actions\CInlineAction.php(50): UserController->actionAdmin()
+#6 C:\wamp\www\yiiframework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yiiframework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yiiframework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\www\yiiframework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yiiframework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yiiframework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yiiframework\web\CController.php(292): CFilterChain->run()
+#13 C:\wamp\www\yiiframework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yiiframework\web\CWebApplication.php(276): CController->run('admin')
+#15 C:\wamp\www\yiiframework\web\CWebApplication.php(135): CWebApplication->runController('admin/user/admi...')
+#16 C:\wamp\www\yiiframework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\sampleproject\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/sampleproject/admin/user/
+---
