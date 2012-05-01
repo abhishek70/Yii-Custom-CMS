@@ -55,6 +55,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 <?php $this->widget('ext.selgridview.SelGridView', array(
 	'id'=>'user-grid',
 	'dataProvider'=>$model->search(),
+        'ajaxUpdate'=>true,
 	'selectableRows' => 2,
 	'filter'=>$model,
 	'pager' => array('cssFile' => Yii::app()->themeManager->baseUrl . '/css/cgridview/cgridview.css'),
@@ -87,11 +88,23 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <select id="table-select-actions" class="round dropdowncss">
     <option value="Delete">Delete</option>
+    <option value="Enable">Enable</option>
+    <option value="Disable">Disable</option>
     <option value="Export">Export</option>
-    <option value="Archive">Archive</option>
+    
 </select>
 
-<a class="round button blue text-upper small-button" href="#">Apply to selected</a>	
+<!--<a class="round button blue text-upper small-button" href="#">Apply to selected</a>-->
+
+<?php echo CHtml::ajaxLink("Apply to selected",
+ $this->createUrl('user/multipleoperation'),
+ array("type" => "post",
+ "data" => "js:{operation:$('#table-select-actions').val() ,chk:$('#user-grid').selGridView('getAllSelection')}",
+"success" => "js:function(data) { $('#user-grid').yiiGridView.update('user-grid'); $('input[type=checkbox]').each(function() 
+{ 
+this.checked = false; 
+}); }"),array('class'=>'round button blue text-upper small-button')); ?>
+
 </div>	
 </div>
 </div>

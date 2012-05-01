@@ -11,18 +11,22 @@ class UserController extends Controller
 	/**
 	 * @return array action filters
 	 */
-	public function filters()
+	/*
+        public function filters()
 	{
 		return array(
 			'accessControl', // perform access control for CRUD operations
 		);
 	}
+         * 
+         */
 
 	/**
 	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
+        /*
 	public function accessRules()
 	{
 		return array(
@@ -43,6 +47,8 @@ class UserController extends Controller
 			),
 		);
 	}
+         * 
+         */
 
 	/**
 	 * Displays a particular model.
@@ -187,4 +193,44 @@ class UserController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionMultipleoperation()
+        {
+            $fetchIdarr=array();
+            $fetchIdStr='';
+            $operation=(isset($_POST['operation']) && $_POST['operation']!='') ? $_POST['operation'] : '';
+            
+            if(isset($_POST['chk']) && count($_POST['chk'])>0) {
+                    
+                foreach($_POST['chk'] as $val) {
+                        $fetchIdarr[]=$val;
+                }
+                
+                $fetchIdStr=implode(',',$fetchIdarr);
+            }
+           
+                
+            if($operation=='Disable') {
+                
+               /* $criteria = new CDbCriteria;
+                $criteria->addInCondition( "id" , $fetchIdStr );
+                User::model()->updateAll(array('isactive'=>'no'), $criteria);*/
+                
+               User::model()->updateAll(array('isactive'=>'no'),'id IN ('.$fetchIdStr.')');
+                
+            }
+            
+            if($operation=='Enable') {
+                
+               /* $criteria = new CDbCriteria;
+                $criteria->addInCondition( "id" , $fetchIdStr );
+                User::model()->updateAll(array('isactive'=>'no'), $criteria);*/
+                
+               User::model()->updateAll(array('isactive'=>'yes'),'id IN ('.$fetchIdStr.')');
+                
+            }
+            
+            
+        }
+        
 }
