@@ -216,8 +216,9 @@ class UserController extends Controller
                 $criteria->addInCondition( "id" , $fetchIdStr );
                 User::model()->updateAll(array('isactive'=>'no'), $criteria);*/
                 
-               User::model()->updateAll(array('isactive'=>'no'),'id IN ('.$fetchIdStr.')');
-                
+               if($fetchIdStr!='') {
+                    User::model()->updateAll(array('isactive'=>'no'),'id IN ('.$fetchIdStr.')');
+               } 
             }
             
             if($operation=='Enable') {
@@ -226,8 +227,9 @@ class UserController extends Controller
                 $criteria->addInCondition( "id" , $fetchIdStr );
                 User::model()->updateAll(array('isactive'=>'no'), $criteria);*/
                 
-               User::model()->updateAll(array('isactive'=>'yes'),'id IN ('.$fetchIdStr.')');
-                
+               if($fetchIdStr!='') {
+                    User::model()->updateAll(array('isactive'=>'yes'),'id IN ('.$fetchIdStr.')');
+               }
             }
             
             

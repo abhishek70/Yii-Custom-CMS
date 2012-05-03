@@ -87,6 +87,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 <label for="table-select-actions">With selected:</label>
 
 <select id="table-select-actions" class="round dropdowncss">
+    <option value="">Select Action</option>
     <option value="Delete">Delete</option>
     <option value="Enable">Enable</option>
     <option value="Disable">Disable</option>
@@ -103,7 +104,12 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 "success" => "js:function(data) { $('#user-grid').yiiGridView.update('user-grid'); $('input[type=checkbox]').each(function() 
 { 
 this.checked = false; 
-}); }"),array('class'=>'round button blue text-upper small-button')); ?>
+}); }"),array('class'=>'round button blue text-upper small-button',
+    "onclick"=>"if($('#user-grid').selGridView('getAllSelection')=='') {
+        alert('Please select the record(s) to perform Action');return} 
+        if($('#table-select-actions').val()==''){
+        alert('Please select the Action');return} 
+        if (!confirm('Are you sure?\\r\\nYou want to perform '+$('#table-select-actions').val()+' action.')){return}")); ?>
 
 </div>	
 </div>
