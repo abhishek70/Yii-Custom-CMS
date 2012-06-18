@@ -124,9 +124,13 @@ class User extends CActiveRecord
 		$criteria->compare('firstname',$this->firstname,true);
 		$criteria->compare('lastname',$this->lastname,true);
 		$criteria->compare('isactive',$this->isactive,true);
+                //$criteria->compare('isdeleted','no',false);
 
 		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+                    'pagination'=>array(
+                        'pageSize'=> Yii::app()->user->getState('pageSize',Yii::app()->params['defaultPageSize']),
+                    ),
+		    'criteria'=>$criteria,
 		));
 	}
 }

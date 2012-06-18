@@ -1,4 +1,7 @@
 <?php
+
+$pageSize=Yii::app()->user->getState('pageSize',Yii::app()->params['defaultPageSize']); 
+
 $this->breadcrumbs=array(
 	'Users'=>array('index'),
 	'Manage',
@@ -42,6 +45,9 @@ $('#reset-button').live('click',function(){
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
 or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
 </p>
+
+<?php //echo CHtml::button('Export', array('id'=>'export-button','class'=>'span-3 button')); ?>
+    
 <?php echo CHtml::link('Add','create',array('class'=>'button round blue image-right ic-add text-upper','style'=>'float:right')); ?>
 <br/>
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
@@ -62,8 +68,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'cssFile' => Yii::app()->themeManager->baseUrl . '/css/cgridview/cgridview.css',
 	'columns'=>array(
 		array(
-          'class' => 'CCheckBoxColumn',
-        ),
+                    'class' => 'CCheckBoxColumn',
+                ),
 		'username',
 		'email',
 		'firstname',
@@ -74,9 +80,9 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'updatedon',
 		*/
 		array(
-			'header'=>'Actions',
-			'class'=>'CButtonColumn',
-			'viewButtonImageUrl' => Yii::app()->themeManager->baseUrl . '/images/cgridview/' . 'view.png',
+                'header'=>'Actions',
+                'class'=>'CButtonColumn',
+                'viewButtonImageUrl' => Yii::app()->themeManager->baseUrl . '/images/cgridview/' . 'view.png',
 	        'updateButtonImageUrl' => Yii::app()->themeManager->baseUrl . '/images/cgridview/' . 'update.png',
 	        'deleteButtonImageUrl' => Yii::app()->themeManager->baseUrl . '/images/cgridview/' . 'delete.png',
 		),
@@ -101,16 +107,27 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
  $this->createUrl('user/multipleoperation'),
  array("type" => "post",
  "data" => "js:{operation:$('#table-select-actions').val() ,chk:$('#user-grid').selGridView('getAllSelection')}",
-"success" => "js:function(data) { $('#user-grid').yiiGridView.update('user-grid'); $('input[type=checkbox]').each(function() 
-{ 
-this.checked = false; 
-}); }"),array('class'=>'round button blue text-upper small-button',
+"success" => "js:function(data) { $('#user-grid').yiiGridView.update('user-grid');$('.select-on-check').attr('checked',false); 
+ }"),array('class'=>'round button blue text-upper small-button',
     "onclick"=>"if($('#user-grid').selGridView('getAllSelection')=='') {
         alert('Please select the record(s) to perform Action');return} 
         if($('#table-select-actions').val()==''){
         alert('Please select the Action');return} 
         if (!confirm('Are you sure?\\r\\nYou want to perform '+$('#table-select-actions').val()+' action.')){return}")); ?>
 
+<?php Yii::app()->clientScript->registerScript('initPageSize',<<<EOD
+    $('.change-pagesize').live('change', function() {
+        $.fn.yiiGridView.update('user-grid',{ data:{ pageSize: $(this).val() }})
+    });
+EOD
+,CClientScript::POS_READY); ?>
+
+<div style="float:right;">
+    Show Records Per Page : 
+    <?php echo CHtml::dropDownList('pageSize',$pageSize,array(5=>5,10=>10,20=>20,50=>50,100=>100),
+                array('class'=>'change-pagesize round dropdowncss'))?>
+</div>
 </div>	
+
 </div>
 </div>

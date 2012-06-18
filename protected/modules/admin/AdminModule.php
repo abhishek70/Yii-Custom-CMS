@@ -27,6 +27,7 @@ class AdminModule extends CWebModule
                 ));
                 
                 Yii::app()->theme = 'admin/' . $this->theme;
+                Yii::app()->params['defaultPageSize'] = 10;
 
 		// Set theme url
                 Yii::app()->themeManager->setBaseUrl( Yii::app()->theme->baseUrl );

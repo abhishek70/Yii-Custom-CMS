@@ -27,7 +27,10 @@
 
 	<p>
 		<?php echo $form->label($model,'isactive'); ?>
-		<?php echo $form->dropDownList($model,'isactive',array('yes'=>"Yes",'no'=>"No"),array('empty' => 'Select Status','class' =>'round dropdowncss' )); ?>
+		<div class="compactRadioGroup">
+		<?php echo $form->radioButtonList($model,'isactive',array('yes'=>"Yes",'no'=>"No"),array( 'separator' => "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" )); ?>
+                </div>
+                    <?php //echo $form->dropDownList($model,'isactive',array('yes'=>"Yes",'no'=>"No"),array('empty' => 'Select Status','class' =>'round dropdowncss' )); ?>
 	</p>
 
 	<div class="row buttons">

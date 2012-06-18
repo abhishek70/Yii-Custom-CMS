@@ -14,7 +14,7 @@
 	<p>
 	  <?php echo $form->labelEx($model,'username'); ?>
       <?php //echo $form->textField($model,'username',array('class'=>'round full-width-input','autofocus'=>'')); ?>
-      <?php echo $form->textField($model,'username',array('class'=>'round full-width-input')); ?>
+      <?php echo $form->textField($model,'username',array('class'=>'round full-width-input','autofocus'=>'')); ?>
 	  <?php echo $form->error($model,'username'); ?>
 	</p>
     <p>

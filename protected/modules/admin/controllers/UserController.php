@@ -49,6 +49,7 @@ class UserController extends Controller
 	}
          * 
          */
+        
 
 	/**
 	 * Displays a particular model.
@@ -124,8 +125,8 @@ class UserController extends Controller
 		if(Yii::app()->request->isPostRequest)
 		{
 			// we only allow deletion via POST request
-			$this->loadModel($id)->delete();
-
+			//$this->loadModel($id)->delete();
+                        User::model()->updateByPk($id,array('isdeleted'=>'yes'));
 			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 			if(!isset($_GET['ajax']))
 				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
@@ -143,7 +144,13 @@ class UserController extends Controller
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));*/
-		$model=new User('search');
+            
+		// page size drop down changed
+                if (isset($_GET['pageSize'])) {
+                    Yii::app()->user->setState('pageSize',(int)$_GET['pageSize']);
+                    unset($_GET['pageSize']);  // would interfere with pager and repetitive page size change
+                }
+                $model=new User('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['User']))
 			$model->attributes=$_GET['User'];
@@ -223,16 +230,21 @@ class UserController extends Controller
             
             if($operation=='Enable') {
                 
-               /* $criteria = new CDbCriteria;
-                $criteria->addInCondition( "id" , $fetchIdStr );
-                User::model()->updateAll(array('isactive'=>'no'), $criteria);*/
-                
                if($fetchIdStr!='') {
                     User::model()->updateAll(array('isactive'=>'yes'),'id IN ('.$fetchIdStr.')');
                }
             }
             
             
+            if($operation=='Delete') {
+                
+               if($fetchIdStr!='') {
+                    User::model()->updateAll(array('isdeleted'=>'yes'),'id IN ('.$fetchIdStr.')');
+               }
+            }
+            
+            
         }
         
+    
 }
