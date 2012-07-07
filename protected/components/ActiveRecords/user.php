@@ -126,10 +126,16 @@ class User extends CActiveRecord
 		$criteria->compare('isactive',$this->isactive,true);
                 $criteria->compare('isdeleted','no',false);
 
-		return new CActiveDataProvider($this, array(
+		// For showing the Default Sort Icon need to replace file for yiiframework/web/CSort.php
+                
+                return new CActiveDataProvider($this, array(
+                    'sort'=>array(
+                        'defaultOrder'=>'firstname ASC',
+                    ),
                     'pagination'=>array(
                         'pageSize'=> Yii::app()->user->getState('pageSize',Yii::app()->params['defaultPageSize']),
                     ),
+                    
 		    'criteria'=>$criteria,
 		));
 	}
