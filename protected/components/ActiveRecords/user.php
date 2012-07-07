@@ -127,7 +127,8 @@ class User extends CActiveRecord
                 $criteria->compare('isdeleted','no',false);
 
 		// For showing the Default Sort Icon need to replace file for yiiframework/web/CSort.php
-                
+          
+ 
                 return new CActiveDataProvider($this, array(
                     'sort'=>array(
                         'defaultOrder'=>'firstname ASC',
