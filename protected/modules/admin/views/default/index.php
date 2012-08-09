@@ -35,6 +35,14 @@ You may customize this page by editing <tt><?php //echo __FILE__; ?></tt>
         				
         				<div class="dashIconText"><?php echo CHtml::link('Manage Users',array('user/index')); ?></div>
     				    </div>
+                        
+                        <div class="dashIcon span-3" style="margin-left:20px; display:inline;">
+                        <?php $pageimg='<img alt="Mange Pages" src="'.Yii::app()->themeManager->baseUrl.'/images/icon-article.png" title="Manage Pages">'; 
+						echo CHtml::link($pageimg,array('page/index'));
+						?>
+        				
+        				<div class="dashIconText"><?php echo CHtml::link('Manage Pages',array('page/index')); ?></div>
+    				    </div>
 			
 					</div> <!-- end content-module-main -->
 				

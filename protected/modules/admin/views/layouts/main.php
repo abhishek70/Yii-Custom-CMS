@@ -112,6 +112,7 @@
 		 $this->widget('zii.widgets.CMenu',array(
 				'items'=>array(
 				array('label'=>'Manage Users', 'url'=>array('user/index'),'active'=>$this->id=='user'),
+				array('label'=>'Manage Pages', 'url'=>array('page/index'),'active'=>$this->id=='page'),
 				array('label'=>'Log out', 'url'=>array('default/logout')),
 			),
 		)); 

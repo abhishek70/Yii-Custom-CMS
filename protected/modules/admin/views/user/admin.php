@@ -61,7 +61,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 <?php $this->widget('ext.selgridview.SelGridView', array(
 	'id'=>'user-grid',
 	'dataProvider'=>$model->search(),
-        'ajaxUpdate'=>true,
+    'ajaxUpdate'=>true,
 	'selectableRows' => 2,
 	'filter'=>$model,
 	'pager' => array('cssFile' => Yii::app()->themeManager->baseUrl . '/css/cgridview/cgridview.css'),
