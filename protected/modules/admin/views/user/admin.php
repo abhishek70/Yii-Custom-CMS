@@ -1,6 +1,6 @@
 <?php
 
-$pageSize=Yii::app()->user->getState('pageSize',Yii::app()->params['defaultPageSize']); 
+//$pageSize=Yii::app()->user->getState('pageSize',Yii::app()->params['defaultPageSize']); 
 
 $this->breadcrumbs=array(
 	'Users'=>array('index'),
@@ -124,8 +124,11 @@ EOD
 
 <div style="float:right;">
     Show Records Per Page : 
-    <?php echo CHtml::dropDownList('pageSize',$pageSize,array(5=>5,10=>10,20=>20,50=>50,100=>100),
-                array('class'=>'change-pagesize round dropdowncss'))?>
+    <?php echo CHtml::dropDownList('pageSize',Yii::app()->params['defaultPageSize'],Yii::app()->params['pageSizeOptions'],
+                array('class'=>'change-pagesize round dropdowncss')) ?>
+    <?php /*echo CHtml::dropDownList('pageSize',$pageSize,array(5=>5,10=>10,20=>20,50=>50,100=>100),
+                array('class'=>'change-pagesize round dropdowncss'))*/ ?>
+    
 </div>
 </div>	
 
