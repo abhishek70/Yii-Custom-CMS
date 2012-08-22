@@ -95,5 +95,7 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+		'defaultPageSize' => 10,
+		'pageSizeOptions'=>array(5=>5,10=>10,20=>20,50=>50,100=>100),
 	),
 );

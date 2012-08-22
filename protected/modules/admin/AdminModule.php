@@ -21,13 +21,14 @@ class AdminModule extends CWebModule
                     'errorHandler' => array(
                         'errorAction' => 'admin/default/error'),
                     'user' => array(
-                        'class' => 'CWebUser',             
+                        'allowAutoLogin'=>true,
+						'class' => 'CWebUser',             
                         'loginUrl' => Yii::app()->createUrl('/admin/default/login'),
                     )
                 ));
                 
                 Yii::app()->theme = 'admin/' . $this->theme;
-                Yii::app()->params['defaultPageSize'] = 10;
+                //Yii::app()->params['defaultPageSize'] = 10;
 
 		// Set theme url
                 Yii::app()->themeManager->setBaseUrl( Yii::app()->theme->baseUrl );

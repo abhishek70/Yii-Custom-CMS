@@ -97,7 +97,7 @@ class Page extends CActiveRecord
 		// For showing the Default Sort Icon need to replace file for yiiframework/web/CSort.php
         return new CActiveDataProvider($this, array(
                     'sort'=>array(
-                        'defaultOrder'=>'firstname ASC',
+                        'defaultOrder'=>'title ASC',
                     ),
                     'pagination'=>array(
                         'pageSize'=> Yii::app()->user->getState('pageSize',Yii::app()->params['defaultPageSize']),
