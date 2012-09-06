@@ -14,6 +14,11 @@ class AdminModule extends CWebModule
 		$this->setImport(array(
 			'admin.models.*',
 			'admin.components.*',
+			/*'rights.components.*',
+			'rights.components.behaviors.*',
+			'rights.components.dataproviders.*',
+			'rights.controllers.*',
+			'rights.models.*',*/
 			//'application.components.ActiveRecords.*'
 		));
                 
@@ -42,6 +47,7 @@ class AdminModule extends CWebModule
             {
 				
                 $controller->layout="main";
+				Yii::app()->widgetFactory->widgets['CBreadcrumbs']=array( 'homeLink'=>CHtml::link('Home', array('/admin')));
                 // this method is called before any module controller action is performed
                 // you may place customized code here
                  $route = $controller->id . '/' . $action->id;

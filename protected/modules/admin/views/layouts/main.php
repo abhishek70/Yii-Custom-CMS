@@ -97,10 +97,7 @@
 		)); */ ?>
 	</div>--><!-- mainmenu -->
         
-	<?php //if(isset($this->breadcrumbs)):?>
-		<?php //$this->widget('zii.widgets.CBreadcrumbs', array('links'=>$this->breadcrumbs,
-		//)); ?><!-- breadcrumbs -->
-	<?php //endif?>
+	
                 
         <div id="content">
 			<div class="page-full-width cf">
@@ -121,6 +118,13 @@
 			</div> <!-- end side-menu -->
             
             <div class="side-content fr">
+            
+			<?php //if(isset($this->breadcrumbs)):?>
+			<?php //$this->widget('zii.widgets.CBreadcrumbs',
+					 //array('links'=>$this->breadcrumbs,
+				//)); ?><!-- breadcrumbs -->
+			<?php //endif?>
+            
             <?php endif; ?>
 			<?php echo $content; ?>
             <?php if(Yii::app()->user->id != '') : ?>
