@@ -44,11 +44,25 @@ class Page extends CActiveRecord
 			array('title', 'required'),
 			array('title', 'length', 'max'=>255),
 			array('description', 'safe'),
-			array('title','unique'),
+			//array('title','unique'),
+			array('title','checkTitle'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id,title, description', 'safe', 'on'=>'search'),
 		);
+	}
+	
+	public function checkTitle($attribute,$params)
+	{
+		if (Page::model()->exists(
+			array(
+			      'condition'=>'title=:title AND isdeleted=:isdeleted',
+			      'params'=>array(':title'=>$this->title,':isdeleted'=>'no'),
+			      ))
+				)
+		{
+			$this->addError('title','Page Title already used');
+		}
 	}
 
 	/**
