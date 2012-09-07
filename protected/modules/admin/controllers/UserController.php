@@ -78,6 +78,7 @@ class UserController extends Controller
 		{
 			$model->attributes=$_POST['User'];
 			$model->isactive=$_POST['User']['isactive'];
+			$model->password=md5($_POST['User']['password']);
 			$model->createdon=new CDbExpression('NOW()');
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
