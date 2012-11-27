@@ -8,6 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
+	//'defaultController' => 'site/login',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -16,7 +17,9 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
-		'application.components.ActiveRecords.*'
+		'application.components.ActiveRecords.*',
+		'application.modules.rights.*',
+        'application.modules.rights.components.*',
 	),
 
 	'modules'=>array(
@@ -30,7 +33,14 @@ return array(
 		),
 		'admin'=>array( 'import' => array('admin.components.*'),
                                                 'layout' => 'main'),
+
 		'shop' => array( 'debug' => 'true'),
+
+		'rights'=>array(
+				//'superuserName'=>'admin',
+                		//'install'=>true,
+        	),
+		'customer'=>array(),
 		
 	),
 
@@ -39,16 +49,26 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+			'class'=>'RWebUser',
 		),
+		'authManager'=>array(
+                'class'=>'RDbAuthManager',
+                'connectionID'=>'db',
+                'defaultRoles'=>array('Authenticated', 'Guest'),
+        ),
 		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
 				'admin/' => 'admin',
+				'rights/' => 'rights',
                 'admin/<_c:([a-zA-z0-9-]+)>' => 'admin/<_c>/admin',
 		  		'admin/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>' => 'admin/<_c>/<_a>',
 		  		'admin/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>//*' => 'admin/<_c>/<_a>/',
+				'rights/<_c:([a-zA-z0-9-]+)>' => 'rights/<_c>/rights',
+		  		'rights/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>' => 'rights/<_c>/<_a>',
+		  		'rights/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>//*' => 'rights/<_c>/<_a>/',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
@@ -61,20 +81,20 @@ return array(
 		),*/
 		// uncomment the following to use a MySQL database
 		
-		'db'=>array(
+		/*'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=sampleproject',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
-			//'tablePrefix' => 'tbl_',
-		),
+			'tablePrefix' => '',
+		),*/
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
         ),
-		'log'=>array(
+		/*'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
 				array(
@@ -82,13 +102,13 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				
 			),
-		),
+		),*/
 	),
 
 	// application-level parameters that can be accessed
