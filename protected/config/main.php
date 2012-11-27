@@ -30,6 +30,7 @@ return array(
 		),
 		'admin'=>array( 'import' => array('admin.components.*'),
                                                 'layout' => 'main'),
+		'shop' => array( 'debug' => 'true'),
 		
 	),
 
