@@ -31,6 +31,15 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
 	}
+	
+	/**
+	 * This is the 'About' action that is invoked
+	 * 
+	 */
+	public function actionAbout()
+	{
+		$this->render('about');
+	}
 
 	/**
 	 * This is the action to handle external exceptions.
@@ -52,6 +61,14 @@ class SiteController extends Controller
 	public function actionContact()
 	{
 		$model=new ContactForm;
+		
+		// if it is ajax validation request
+		if(isset($_POST['ajax']) && $_POST['ajax']==='contacts')
+		{
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+		
 		if(isset($_POST['ContactForm']))
 		{
 			$model->attributes=$_POST['ContactForm'];
