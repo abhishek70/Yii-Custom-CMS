@@ -14,11 +14,11 @@ class AdminModule extends CWebModule
 		$this->setImport(array(
 			'admin.models.*',
 			'admin.components.*',
-			/*'rights.components.*',
+			'rights.components.*',
 			'rights.components.behaviors.*',
 			'rights.components.dataproviders.*',
 			'rights.controllers.*',
-			'rights.models.*',*/
+			'rights.models.*',
 			//'application.components.ActiveRecords.*'
 		));
                 

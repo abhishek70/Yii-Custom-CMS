@@ -11,12 +11,12 @@ class PageController extends Controller
 	/**
 	 * @return array action filters
 	 */
-	/*public function filters()
+	public function filters()
 	{
 		return array(
-			'accessControl', // perform access control for CRUD operations
+			'rights', // perform access control for CRUD operations
 		);
-	}*/
+	}
 
 	/**
 	 * Specifies the access control rules.
@@ -31,17 +31,23 @@ class PageController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','admin'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('delete'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
 		);
+	}
+	
+	public function allowedActions() { 
+	
+		return 'index, view, create, update, delete, admin'; 
+	
 	}*/
 
 	/**
