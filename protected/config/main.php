@@ -33,10 +33,13 @@ return array(
 		),
 		'admin'=>array( 'import' => array('admin.components.*'),
                                                 'layout' => 'main'),
+
+		'shop' => array( 'debug' => 'true'),
+
 		'rights'=>array(
 				//'superuserName'=>'admin',
-                //'install'=>true,
-        ),
+                		//'install'=>true,
+        	),
 		'customer'=>array(),
 		
 	),
