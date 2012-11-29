@@ -46,7 +46,7 @@
 						'activeCssClass' => 'selected',
 						'items'=>array(
 							array('label'=>'Women', 'url'=>array('')),
-							array('label'=>'Blog', 'url'=>array('')),
+							array('label'=>'Blog', 'url'=>array('/site/blog')),
 							array('label'=>'Contact', 'url'=>array('/site/contact'))						
 							),
 				      )); 

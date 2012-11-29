@@ -40,6 +40,15 @@ class SiteController extends Controller
 	{
 		$this->render('about');
 	}
+	
+	/**
+	 * This is the 'Blog' action that is invoked
+	 * 
+	 */
+	public function actionBlog()
+	{
+		$this->render('blog');
+	}
 
 	/**
 	 * This is the action to handle external exceptions.

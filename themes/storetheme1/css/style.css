@@ -209,7 +209,7 @@ img {
 	width: 220px;
 	margin: 0 30px 0 10px;
 }
-#sidebar h4, #main h4 {
+#sidebar h4, .main h4, #main h4 {
 	color: #7b8c96;
 	line-height: 24px;
 	margin: 0 0 24px;
@@ -236,11 +236,11 @@ ul#about-list li a, ul#archives li a {
 ul#about-list li a:hover, ul#archives li a:hover {
 	color: #b5b5b5;
 }
-#main {
+.main, #main {
 	width: 650px;
 	margin: 0 10px 0 30px;
 }
-#main p {
+.main p, #main p {
 	color: #fff;
 	font-size: 15px;
 	line-height: 24px;
@@ -248,11 +248,11 @@ ul#about-list li a:hover, ul#archives li a:hover {
 	padding: 0 0 24px;
 	text-align: justify;
 }
-#main p a {
+.main p a, #main p a {
 	color: #fff;
 	text-shadow: 1px 0px #151c22, 0px -1px #151c22, -1px 0px #151c22, 0px 1px #151c22;
 }
-#main p a:hover {
+.main p a:hover, #main p a:hover  {
 	color: #b6b6b6;
 }
 /** Blogs **/
@@ -334,8 +334,8 @@ ul#blogs li a:hover, #sidebar ul.contacts li a:hover {
 	border: 0;
 	padding: 4px;
 }
-#contacts table td {
-	padding-bottom: 24px;
+#contacts div {
+	padding-bottom: 10px;
 }
 /** Mens and Womens Pages **/
 #shirts {
@@ -508,4 +508,136 @@ ul#blogs li a:hover, #sidebar ul.contacts li a:hover {
 #footnote a {
 	color: #808080;
 	text-decoration: none;
+}
+
+/**/
+div.main
+{
+}
+
+div.main input,
+div.main textarea,
+div.main select
+{
+	margin: 0.2em 0 0.5em 0;
+}
+
+div.main fieldset
+{
+	border: 1px solid #DDD;
+	padding: 10px;
+	margin: 0 0 10px 0;
+    -moz-border-radius:7px;
+}
+
+div.main label
+{
+	font-weight: bold;
+	font-size: 0.9em;
+	display: block;
+}
+
+div.main .row
+{
+	margin: 5px 0;
+}
+
+div.main .hint
+{
+	margin: 0;
+	padding: 0;
+	color: #999;
+}
+
+div.main .note
+{
+	font-style: italic;
+}
+
+div.main span.required
+{
+	color: red;
+}
+
+div.main div.error label:first-child,
+div.main label.error,
+div.main span.error
+{
+	color: #C00;
+}
+
+div.main div.error input,
+div.main div.error textarea,
+div.main div.error select,
+div.main input.error,
+div.main textarea.error,
+div.main select.error
+{
+	background: #FEE;
+	border-color: #C00;
+}
+
+div.main div.success input,
+div.main div.success textarea,
+div.main div.success select,
+div.main input.success,
+div.main textarea.success,
+div.main select.success
+{
+	background: #E6EFC2;
+	border-color: #C6D880;
+}
+
+
+div.main .errorSummary
+{
+	border: 2px solid #C00;
+	padding: 7px 7px 12px 7px;
+	margin: 0 0 20px 0;
+	background: #FEE;
+	font-size: 0.9em;
+	min-width:500px;
+}
+
+div.main .errorMessage
+{
+	color: red;
+	font-size: 0.9em;
+}
+
+div.main .errorSummary p
+{
+	margin: 0;
+	padding: 5px;
+	color:#000;
+}
+
+div.main .errorSummary ul
+{
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+
+div.wide.main label
+{
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	text-align: right;
+	width: 100px;
+}
+
+div.wide.main .row
+{
+	clear: left;
+}
+
+div.wide.main .buttons, div.wide.main .hint, div.wide.main .errorMessage
+{
+	clear: left;
+	padding-left: 110px;
+}
+div.main span
+{
+	color:#81888E;
 }
